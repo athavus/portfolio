@@ -1,0 +1,158 @@
+/**ESTILIZAÇÕES GERAIS**/
+hr {
+    color:#abaeb3;
+}
+/**FIM DAS ESTILIZAÇÕES GERAIS
+
+/**INICIO DA ESTILIZAÇÃO DO HEADER E NAVBAR**/
+header {
+    background-color: #3a3737;
+}
+
+#title {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.nav-link:hover {
+    transition: 0.5s;
+    color: #544d4d; 
+    opacity: 0.7;
+}
+/**FIM DA ESTILIZAÇÃO DO HEADER E NAVBAR**/
+
+/**INICIO DA ESTILIZAÇÃO DA PRIMEIRA SEÇÃO DO SITE (TÍTULO)**/
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.coluna {
+    margin-left: 4%;
+}
+
+#eu {
+    width: 20em;
+    height: 20em;
+    position: relative;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+#devweb {
+    font-family: 'Source Code Pro', monospace;
+}
+
+#devfrontend {
+    font-size: 220%;
+}
+
+.icon {
+    border: none;
+    padding: 1.3%;
+    border-radius: 100%;
+}
+
+/**ESTILIZAÇÃO DOS ÍCONES**/
+#instagram {
+    background-color: #f00075;
+}
+
+#instagram:hover {
+    transition: 0.5s;
+    background-color: rgb(232, 228, 228); 
+    opacity: 0.7;
+}
+
+#linkedin {
+    background-color: #0d66c2;
+}
+
+#linkedin:hover {
+    transition: 0.5s;
+    background-color: rgb(232, 228, 228); 
+    opacity: 0.7;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+#whatsapp:hover {
+    transition: 0.5s;
+    background-color: rgb(232, 228, 228); 
+    opacity: 0.7;
+}
+
+#github {
+    background-color: #24292d;
+}
+
+#github:hover {
+    transition: 0.5s;
+    background-color: rgb(232, 228, 228); 
+    opacity: 0.7;
+}
+/**FIM DA ESTILIZAÇÃO DA PRIMEIRA SEÇÃO DO SITE**/
+
+.section {
+    width: 70%;
+    position: relative;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+/**INICIO DA ESTILIZAÇÃO DA SEGUNDA SEÇÃO DO SITE**/
+
+#projectComplete {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #f3f0f0f3;
+    padding: 5%;
+}
+
+#certificado {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+.download {
+    margin-left: 10px;
+    background-color: #3a3737;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    border-radius: 7%;
+    padding: 12px;
+    text-decoration: none; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.download:hover {
+    color: black;
+    transition: 0.5s;
+    background-color: white; 
+    opacity: 0.7;
+}
+
+.errorpdf {
+    color:#eb4b3f;
+}
+
+/**FIM DA ESTILIZAÇÃO DA SEGUNDA SEÇÃO**/
+
+/**INICIO DA ESTILIZAÇÃO DA TERCEIRA SEÇÃO**/
+#acessar {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+#acessar:hover {
+    color: black;
+    transition: 0.3s;
+    opacity: 0.7;
+}
