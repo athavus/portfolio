@@ -2,11 +2,33 @@
 hr {
     color:#abaeb3;
 }
-/**FIM DAS ESTILIZAÇÕES GERAIS
+/*FIM DAS ESTILIZAÇÕES GERAIS*/
+
+/*ANIMAÇÕES*/
+@keyframes slideDown {
+    from {
+        top: -80px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes cascate {
+    from {
+        opacity: 0; /* Começa invisível */
+        transform: translateY(-20px); /* Move para cima */
+    }
+    to {
+        opacity: 1; /* Torna o elemento visível */
+        transform: translateY(0); /* Volta à posição original */
+    }
+}
 
 /**INICIO DA ESTILIZAÇÃO DO HEADER E NAVBAR**/
 header {
     background-color: #3a3737;
+    animation: slideDown 0.75s ease-in-out forwards;
 }
 
 #title {
@@ -146,7 +168,6 @@ header {
 #acessar {
     padding-left: 15px;
     padding-right: 15px;
-
     text-decoration: none;
     margin-top: 15px;
 }
@@ -155,4 +176,141 @@ header {
     color: black;
     transition: 0.3s;
     opacity: 0.7;
+}
+
+.triggered {
+    animation: cascate 0.5s forwards;
+}
+
+.sec1 {
+    opacity: 0;
+}
+
+.sec1:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.sec1:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.sec1:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.sec1:nth-child(4) {
+    animation-delay: 0.5s;
+}
+
+.sec1:nth-child(5) {
+    animation-delay: 0.6s;
+}
+
+.sec1:nth-child(6) {
+    animation-delay: 0.7s;
+}
+
+.sec1:nth-child(7) {
+    animation-delay: 0.8s;
+}
+
+.sec1:nth-child(8) {
+    animation-delay: 0.9s;
+}
+
+.sec1:nth-child(9) {
+    animation-delay: 1s;
+}
+.sec1:nth-child(10) {
+    animation-delay: 1s;
+}
+
+#telephone {
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 25px;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: start;
+}
+
+.myCertificates {
+    opacity: 0;
+}
+
+.myCertificates:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.myCertificates:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.myCertificates:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.myCertificates:nth-child(4) {
+    animation-delay: 0.5s;
+}
+
+.myCertificates:nth-child(5) {
+    animation-delay: 0.6s;
+}
+
+.myCertificates:nth-child(6) {
+    animation-delay: 0.7s;
+}
+
+.myCertificates:nth-child(7) {
+    animation-delay: 0.8s;
+}
+
+.myCompletedProjects {
+    opacity: 0;
+}
+
+.myCompletedProjects:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.myCompletedProjects:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.myCompletedProjects:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.myCompletedProjects:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.myCompletedProjects:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.myCompletedProjects:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.myOnGoingProjects {
+    opacity: 0;    
+}
+
+.myOnGoingProjects:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.myOnGoingProjects:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.myOnGoingProjects:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.myOnGoingProjects:nth-child(4) {
+    animation-delay: 0.8s;
 }

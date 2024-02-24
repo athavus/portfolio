@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <!--DEFINIÇÃO DE CHARSET E ESCALA-->
@@ -32,7 +32,7 @@
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                         <!--TÍTULO-->
                         <a id="title" href="#" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                            PORTFÓLIO - MIGUEL RYAN DANTAS DE FREITAS
+                            PORTFÓLIO - MIGUEL RYAN
                         </a>
                         <!--CRIAÇÃO DA LISTA COM OS ÍCONES DO DROPDOWN-->
                         <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
@@ -72,28 +72,31 @@
         <section id="secao1">
             <div class="wrapper">
                 <!--PRIMEIRA COLUNA: MINHA FOTO-->
-                <div class="coluna">
+                <div class="coluna sec1">
                     <img id="eu" src="img/eu.jpeg" alt="">
                 </div>
                 <!--SEGUNDA COLUNA: TÍTULO, SUBTÍTULO E REDES SOCIAIS-->
                 <div id="devweb" class="align-self-start mt-4 coluna">
-                    <h1 id="devfrontend">
+                    <h1 id="devfrontend" class="sec1">
                         Desenvolvedor Web Front-End
                     </h1>
                     <hr><br>
-                    <h4>Miguel Ryan</h4>
+                    <h4 class="sec1">Miguel Ryan Dantas de Freitas</h4>
+					<p id="telephone" class="sec1">
+						<img width="45px" src="img/phone.png" alt="phone"> +55 (83)988864397
+					</p>
                     <br>
                     <!--ÍCONES DAS REDES SOCIAIS LINKADAS-->
-                    <button onclick="socialMedia('instagram')" class="icon" id="instagram" href="">
+                    <button onclick="socialMedia('instagram')" class="icon sec1" id="instagram" href="">
                         <img width="40" height="40" src="img/instagram.png" alt="">
                     </button>
-                    <button onclick="socialMedia('linkedin')" class="icon" id="linkedin" href="">
+                    <button onclick="socialMedia('linkedin')" class="icon sec1" id="linkedin" href="">
                         <img width="40" height="40" src="img/linkedin.png" alt="">
                     </button>
-                    <button onclick="socialMedia('whatsapp')" class="icon" id="whatsapp" href="">
+                    <button onclick="socialMedia('whatsapp')" class="icon sec1" id="whatsapp" href="">
                         <img width="40" height="40" src="img/whatsapp.png" alt="">
                     </button>
-                    <button onclick="socialMedia('github')" class="icon" id="github" href="">
+                    <button onclick="socialMedia('github')" class="icon sec1" id="github" href="">
                         <img width="40" height="40" src="img/github.png" alt="">
                     </button>
                 </div>
@@ -107,24 +110,24 @@
         <section id="secaocontent1">
             <!--TÍTULO DA SEÇÃO-->
             <div class="container" id="projectComplete">
-                <h2>
+                <h2 class="myCertificates">
                     Minhas Certificações:
                 </h2>
             </div>
             <!--CERTIFICADO DE CONCLUSÃO DE CURSO DO IFPB - TÉCNICO INFORMÁTICA-->
-            <div class="container" id="certificado">
+            <div class="container myCertificates" id="certificado">
                 <br>
                 <!--SUBTÍTULO DA SEÇÃO-->
-                <h3>
+                <h3 class="myCertificates">
                     - Curso Técnico em Informática Integrado Ao Ensino Médio.
                 </h3>
                 <br>
                 <!--DESCRIÇÃO DA SEÇÃO-->
-                <p>
+                <p class="myCertificates">
                     Concluí o curso técnico em informática integrado ao ensino médio no IFPB - Campus Campina Grande, curso este que possuiu 3 anos de duração.
                 </p>
                 <!--LINK PARA EMBARCAR O PDF-->
-                <object data="documents/certificadoifpbinfo.pdf" type="application/pdf" width="100%" height="300px">
+                <object class="myCertificates" data="documents/certificadoifpbinfo.pdf" type="application/pdf" width="100%" height="300px">
                     <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
                     <p class="errorpdf">
                         Navegador não suporta o pdf embarcado. 
@@ -133,11 +136,11 @@
                 <br><br>
                 <!--LINK PARA BAIXAR O PDF-->
                 <h5>
-                    <i>
+                    <i class="myCertificates">
                         Certificado de Conclusão do Curso Técnico em Informática:
                     </i>
                     <br><br>
-                    <a class="download" href="documents/certificadoifpbinfo.pdf" download="certificado de conclusao de curso tecnico em informatica">
+                    <a class="download myCertificates" href="documents/certificadoifpbinfo.pdf" download="certificado de conclusao de curso tecnico em informatica">
                         Baixar
                     </a>
                 </h5>
@@ -146,19 +149,19 @@
             <hr width="70%" style="margin: auto;">
 
             <!--CERTIFICADO DE PARTICIPAÇÃO NA BSIDESJP-->
-            <div class="container" id="certificado">
+            <div class="container myCertificates" id="certificado">
                 <br>
                 <!--SUBTÍTULO DA SEÇÃO-->
-                <h3>
+                <h3 class="myCertificates">
                     - Participação no Evento Security Bsides João Pessoa 2023.
                 </h3>
                 <br>
                 <!--DESCRIÇÃO DA SEÇÃO-->
-                <p>
+                <p class="myCertificates">
                     Participei no dia 23/09/2023 do evento intitulado Security Bsides João Pessoa 2023, este que possuía carga horária total de 8 horas.    
                 </p>
                 <!--LINK PARA EMBARCAR O PDF-->
-                <object data="documents/bsidesjp.pdf" type="application/pdf" width="100%" height="300px">
+                <object class="myCertificates" data="documents/bsidesjp.pdf" type="application/pdf" width="100%" height="300px">
                     <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
                     <p class="errorpdf">
                         Navegador não suporta o pdf embarcado. 
@@ -167,11 +170,11 @@
                 <br><br>
                 <!--LINK PARA BAIXAR O PDF-->
                 <h5>
-                    <i>
+                    <i class="myCertificates">
                         Certificado de Participação na Security Bsides João Pessoa 2023:
                     </i>
                     <br><br>
-                    <a class="download" href="documents/bsidesjp.pdf" download="certificado de conclusao de curso tecnico em informatica">
+                    <a class="myCertificates download" href="documents/bsidesjp.pdf" download="certificado de conclusao de curso tecnico em informatica">
                         Baixar
                     </a>
                 </h5>
@@ -185,7 +188,7 @@
         <section id="secaocontent2">
             <!--TÍTULO DA SEÇÃO-->
             <div class="container" id="projectComplete">
-                <h2>
+                <h2 class="myCompletedProjects">
                     Meus Projetos Concluídos:
                 </h2>
             </div>
@@ -193,22 +196,22 @@
             <div class="container" id="certificado">
                 <br>
                 <!--SUBTÍTULO DA SEÇÃO-->
-                <h3>
+                <h3 class="myCompletedProjects">
                     - Site para o Lajedo do Marinho.
                 </h3>
                 <br>
                 <!--DESCRIÇÃO DA SEÇÃO-->
-                <p>
+                <p class="myCompletedProjects">
                     Este site foi feito com o intuito de potencializar o turismo na região do Lajedo do Marinho, localizado em Boqueirão - PB.    
                 </p>
                 
                 <!--LINKS PARA ABRIR O SITE DITO-->
-                <button target="_blank" onclick="abrir('https://lajedodomarinho.com.br')" id="acessar" class="download">
+                <button target="_blank" onclick="abrir('https://lajedodomarinho.com.br')" id="acessar" class="download myCompletedProjects">
                     Acessar
                 </button>
-                <a class="download" target="_blank" href="documents/patentelajedo.pdf" download="Certificado de Registro de Programa de Computador">
+                <button id="acessarLajedo" class="download myCompletedProjects" target="_blank" href="documents/patentelajedo.pdf" download="Certificado de Registro de Programa de Computador">
                     Patente
-                </a>
+                </button>
             </div>
         </section>
 
@@ -220,7 +223,7 @@
         <section id="secaocontent3">
             <!--TÍTULO DA SEÇÃO-->
             <div class="container" id="projectComplete">
-                <h2>
+                <h2 class="myOnGoingProjects">
                     Meus Projetos Em Andamento:
                 </h2>
             </div>
@@ -228,17 +231,17 @@
             <div class="container" id="certificado">
                 <br>
                 <!--SUBTÍTULO DA SEÇÃO-->
-                <h3>
+                <h3 class="myOnGoingProjects">
                     - Site para o IFNews.
                 </h3>
                 <br>
                 <!--DESCRIÇÃO DA SEÇÃO-->
-                <p>
+                <p class="myOnGoingProjects">
                     Este site está sendo produzido com o intuito de armazenar as postagens feitas pelo órgão de notícias dos estudantes do Instituto Federal da Paraíba - Campus Campina Grande, intitulado IFNews.
                 </p>
                 
                 <!--LINKS PARA ABRIR O SITE DITO-->
-                <button target="_blank" onclick="abrir('https://github.com/athavus')" id="acessar" class="download">
+                <button target="_blank" onclick="abrir('https://github.com/athavus')" id="acessar" class="download myOnGoingProjects">
                     Acessar
                 </button>
             </div>
@@ -246,17 +249,17 @@
             <div class="container" id="certificado">
                 <br>
                 <!--SUBTÍTULO DA SEÇÃO-->
-                <h3>
+                <h3 class="myOnGoingProjects">
                     - Aplicação Web para o ECIT de Boqueirão.
                 </h3>
                 <br>
                 <!--DESCRIÇÃO DA SEÇÃO-->
-                <p>
+                <p class="myOnGoingProjects">
                     Este webapp está sendo produzido na intenção de informatizar e automatizar as tarefas dos funcionários e alunos da Escola Cidadã Integral Técnica da cidade de Boqueirão.
                 </p>
                 
                 <!--LINKS PARA ABRIR O SITE DITO-->
-                <button target="_blank" onclick="abrir('https://github.com/athavus')" id="acessar" class="download">
+                <button target="_blank" onclick="abrir('https://github.com/athavus')" id="acessar" class="download myOnGoingProjects">
                     Acessar
                 </button>
             </div>
@@ -264,17 +267,17 @@
             <div class="container" id="certificado">
                 <br>
                 <!--SUBTÍTULO DA SEÇÃO-->
-                <h3>
+                <h3 class="myOnGoingProjects">
                     - Empório Sertanejo.
                 </h3>
                 <br>
                 <!--DESCRIÇÃO DA SEÇÃO-->
-                <p>
+                <p class="myOnGoingProjects">
                     Este site está sendo produzido para a loja Empório Sertanejo com o intuito de divulgar e realizar os serviços eletrônicos que a entidade necessita.
                 </p>
                 
                 <!--LINKS PARA ABRIR O SITE DITO-->
-                <button target="_blank" onclick="abrir('https://ilusinusmate.github.io/emporio_sertanejo')" id="acessar" class="download">
+                <button target="_blank" onclick="abrir('https://ilusinusmate.github.io/emporio_sertanejo')" id="acessar" class="myOnGoingProjects download">
                     Acessar
                 </button>
             </div>
