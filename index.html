@@ -13,15 +13,13 @@
             <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
             <!--DOSIS-->
             <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
-        <!--DEFINIÇÃO DO FAVICON-->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <!--IMPORTAÇÃO DO BOOTSTRAP-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!--IMPORTAÇÃO DO ARQUIVO DE CSS-->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="src/style.css">
         <!--IMPORTAÇÃO DO ARQUIVO DE JAVASCRIPT-->
-        <script src="script.js"></script>
+        <script src="src/script.js"></script>
     </head>
     <body>
         <!--CRIAÇÃO DA SEÇÃO DO HEADER-->
@@ -39,14 +37,14 @@
                             <!--DIRECIONA PARA A SEÇÃO DE CERTIFICAÇÕES E LICENÇAS-->
                             <li>
                                 <a href="#secaocontent1" class="nav-link text-white">
-                                    <img class="bi d-block mx-auto mb-1" width="25" height="25" src="img/certificacoes.png">
+                                    <img class="bi d-block mx-auto mb-1" width="25" height="25" src="src/img/certificacoes.png">
                                     Certificações
                                 </a>
                             </li>
                             <!--DIRECIONA PARA A SEÇÃO DE MEUS PROJETOS CONCLUÍDOS-->
                             <li>
                                 <a href="#secaocontent2" class="nav-link text-white">
-                                    <img class="bi d-block mx-auto mb-1" width="25" height="25" src="img/complete.png">
+                                    <img class="bi d-block mx-auto mb-1" width="25" height="25" src="src/img/complete.png">
                                     Concluídos
                                 </a>
                             </li>
@@ -54,7 +52,7 @@
                             <!--DIRECIONA PARA A SEÇÃO DE MEUS PROJETOS EM ANDAMENTO-->
                             <li>
                                 <a href="#secaocontent3" class="nav-link text-white">
-                                    <img class="bi d-block mx-auto mb-1" width="25" height="25" src="img/progress.png">
+                                    <img class="bi d-block mx-auto mb-1" width="25" height="25" src="src/img/progress.png">
                                     Em Andamento
                                 </a>
                             </li>
@@ -72,7 +70,7 @@
             <div class="wrapper">
                 <!--PRIMEIRA COLUNA: MINHA FOTO-->
                 <div class="coluna sec1">
-                    <img id="eu" src="img/eu.jpeg" alt="">
+                    <img id="eu" src="src/img/eu.jpeg" alt="">
                 </div>
                 <!--SEGUNDA COLUNA: TÍTULO, SUBTÍTULO E REDES SOCIAIS-->
                 <div id="devweb" class="align-self-start mt-4 coluna">
@@ -82,21 +80,21 @@
                     <hr><br>
                     <h4 class="sec1">Miguel Ryan Dantas de Freitas</h4>
 					<p id="telephone" class="sec1">
-						<img width="45px" src="img/phone.png" alt="phone"> +55 (83)988864397
+						<img width="45px" src="src/img/phone.png" alt="phone"> +55 (83)988864397
 					</p>
                     <br>
                     <!--ÍCONES DAS REDES SOCIAIS LINKADAS-->
                     <button onclick="socialMedia('instagram')" class="icon sec1" id="instagram" href="">
-                        <img width="40" height="40" src="img/instagram.png" alt="">
+                        <img width="40" height="40" src="src/img/instagram.png" alt="">
                     </button>
                     <button onclick="socialMedia('linkedin')" class="icon sec1" id="linkedin" href="">
-                        <img width="40" height="40" src="img/linkedin.png" alt="">
+                        <img width="40" height="40" src="src/img/linkedin.png" alt="">
                     </button>
                     <button onclick="socialMedia('whatsapp')" class="icon sec1" id="whatsapp" href="">
-                        <img width="40" height="40" src="img/whatsapp.png" alt="">
+                        <img width="40" height="40" src="src/img/whatsapp.png" alt="">
                     </button>
                     <button onclick="socialMedia('github')" class="icon sec1" id="github" href="">
-                        <img width="40" height="40" src="img/github.png" alt="">
+                        <img width="40" height="40" src="src/img/github.png" alt="">
                     </button>
                 </div>
             </div>
@@ -126,7 +124,7 @@
                     Concluí o curso técnico em informática integrado ao ensino médio no IFPB - Campus Campina Grande, curso este que possuiu 3 anos de duração.
                 </p>
                 <!--LINK PARA EMBARCAR O PDF-->
-                <object class="myCertificates" data="documents/certificadoifpbinfo.pdf" type="application/pdf" width="100%" height="300px">
+                <object class="myCertificates" data="src/documents/certificadoifpbinfo.pdf" type="application/pdf" width="100%" height="300px">
                     <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
                     <p class="errorpdf">
                         Navegador não suporta o pdf embarcado. 
@@ -139,7 +137,7 @@
                         Certificado de Conclusão do Curso Técnico em Informática:
                     </i>
                     <br><br>
-                    <a class="download myCertificates" href="documents/certificadoifpbinfo.pdf" download="certificado de conclusao de curso tecnico em informatica">
+                    <a class="download myCertificates" href="src/documents/certificadoifpbinfo.pdf" download="certificado de conclusao de curso tecnico em informatica">
                         Baixar
                     </a>
                 </h5>
@@ -160,7 +158,7 @@
                     Participei no dia 23/09/2023 do evento intitulado Security Bsides João Pessoa 2023, este que possuía carga horária total de 8 horas.    
                 </p>
                 <!--LINK PARA EMBARCAR O PDF-->
-                <object class="myCertificates" data="documents/bsidesjp.pdf" type="application/pdf" width="100%" height="300px">
+                <object class="myCertificates" data="src/documents/bsidesjp.pdf" type="application/pdf" width="100%" height="300px">
                     <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
                     <p class="errorpdf">
                         Navegador não suporta o pdf embarcado. 
@@ -173,7 +171,7 @@
                         Certificado de Participação na Security Bsides João Pessoa 2023:
                     </i>
                     <br><br>
-                    <a class="myCertificates download" href="documents/bsidesjp.pdf" download="certificado de conclusao de curso tecnico em informatica">
+                    <a class="myCertificates download" href="src/documents/bsidesjp.pdf" download="certificado de conclusao de curso tecnico em informatica">
                         Baixar
                     </a>
                 </h5>
@@ -208,7 +206,7 @@
                 <button target="_blank" onclick="abrir('https://lajedodomarinho.com.br')" id="acessar" class="download myCompletedProjects">
                     Acessar
                 </button>
-                <button id="acessarLajedo" class="download myCompletedProjects" target="_blank" href="documents/patentelajedo.pdf" download="Certificado de Registro de Programa de Computador">
+                <button id="acessarLajedo" class="download myCompletedProjects" target="_blank" href="src/documents/patentelajedo.pdf" download="Certificado de Registro de Programa de Computador">
                     Patente
                 </button>
             </div>
@@ -283,6 +281,9 @@
 
         </section>
         <!--FIM DA QUARTA SEÇÃO DO SITE-->
+
+        <button onclick="topFunction()" id="btnVoltarAoTopo" title="Voltar ao Topo"><img width="30px" src="src/img/arrowup.png" alt="seta para cima"></button>
+
         <br><br><br><br>
     </body>
 </html>

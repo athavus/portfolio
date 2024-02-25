@@ -1,0 +1,369 @@
+/**ESTILIZAÇÕES GERAIS**/
+hr {
+    color:#abaeb3;
+}
+/*FIM DAS ESTILIZAÇÕES GERAIS*/
+
+/*ANIMAÇÕES*/
+@keyframes slideDown {
+    from {
+        top: -19%;
+    }
+    to {
+        top: 0%;
+    }
+}
+
+@keyframes cascate {
+    from {
+        opacity: 0; /* Começa invisível */
+        transform: translateY(-20px); /* Move para cima */
+    }
+    to {
+        opacity: 1; /* Torna o elemento visível */
+        transform: translateY(0); /* Volta à posição original */
+    }
+}
+
+/**INICIO DA ESTILIZAÇÃO DO HEADER E NAVBAR**/
+
+@media only screen and (max-width: 767px) {
+    body {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .coluna {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .wrapper {
+        margin: 0;
+    }
+
+    #devweb {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+header {
+    position: relative;
+    width: 100%;
+    top: -19%;
+    animation: slideDown 1.2s ease forwards;
+    background-color: #3a3737;
+}
+
+#title {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.nav-link:hover {
+    transition: 0.5s;
+    color: #312d2d; 
+    opacity: 0.3;
+}
+/**FIM DA ESTILIZAÇÃO DO HEADER E NAVBAR**/
+
+/**INICIO DA ESTILIZAÇÃO DA PRIMEIRA SEÇÃO DO SITE (TÍTULO)**/
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 0;
+}
+
+.coluna {
+    margin-left: 4%;
+}
+
+#eu {
+    width: 20em;
+    height: 20em;
+    position: relative;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+#secao1 {
+    margin: 0;
+}
+
+#devweb {
+    font-family: 'Source Code Pro', monospace;
+}
+
+#devfrontend {
+    font-size: 220%;
+}
+
+.icon {
+    border: none;
+    padding: 1.3%;
+    border-radius: 100%;
+}
+
+/**ESTILIZAÇÃO DOS ÍCONES**/
+#instagram {
+    background-color: #f00075;
+}
+
+#instagram:hover {
+    transition: 0.5s;
+    background-color: #f0007462; 
+    opacity: 0.7;
+}
+
+#linkedin {
+    background-color: #0d66c2;
+}
+
+#linkedin:hover {
+    transition: 0.5s;
+    background-color: #0d68c262; 
+    opacity: 0.7;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+#whatsapp:hover {
+    transition: 0.5s;
+    background-color: #25d36662; 
+    opacity: 0.7;
+}
+
+#github {
+    background-color: #24292d;
+}
+
+#github:hover {
+    transition: 0.5s;
+    background-color: #24292d88; 
+    opacity: 0.7;
+}
+/**FIM DA ESTILIZAÇÃO DA PRIMEIRA SEÇÃO DO SITE**/
+
+.section {
+    width: 70%;
+    position: relative;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+/**INICIO DA ESTILIZAÇÃO DA SEGUNDA SEÇÃO DO SITE**/
+
+#projectComplete {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #f3f0f0f3;
+    padding: 5%;
+}
+
+#certificado {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+.download {
+    margin-left: 10px;
+    background-color: #3a3737;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    border-radius: 7%;
+    padding: 12px;
+    text-decoration: none; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.download:hover {
+    color: black;
+    transition: 0.5s;
+    background-color: white; 
+    opacity: 0.7;
+}
+
+.errorpdf {
+    color:#eb4b3f;
+}
+/**FIM DA ESTILIZAÇÃO DA SEGUNDA SEÇÃO**/
+
+/**INICIO DA ESTILIZAÇÃO DA TERCEIRA SEÇÃO**/
+#acessar {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+#acessar:hover {
+    color: black;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.triggered {
+    animation: cascate 0.5s forwards;
+}
+
+.sec1 {
+    opacity: 0;
+}
+
+.sec1:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.sec1:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.sec1:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.sec1:nth-child(4) {
+    animation-delay: 0.5s;
+}
+
+.sec1:nth-child(5) {
+    animation-delay: 0.6s;
+}
+
+.sec1:nth-child(6) {
+    animation-delay: 0.7s;
+}
+
+.sec1:nth-child(7) {
+    animation-delay: 0.8s;
+}
+
+.sec1:nth-child(8) {
+    animation-delay: 0.9s;
+}
+
+.sec1:nth-child(9) {
+    animation-delay: 1s;
+}
+.sec1:nth-child(10) {
+    animation-delay: 1s;
+}
+
+#telephone {
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 25px;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.myCertificates {
+    opacity: 0;
+}
+
+.myCertificates:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.myCertificates:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.myCertificates:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.myCertificates:nth-child(4) {
+    animation-delay: 0.5s;
+}
+
+.myCertificates:nth-child(5) {
+    animation-delay: 0.6s;
+}
+
+.myCertificates:nth-child(6) {
+    animation-delay: 0.7s;
+}
+
+.myCertificates:nth-child(7) {
+    animation-delay: 0.8s;
+}
+
+.myCompletedProjects {
+    opacity: 0;
+}
+
+.myCompletedProjects:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.myCompletedProjects:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.myCompletedProjects:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.myCompletedProjects:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.myCompletedProjects:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.myCompletedProjects:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.myOnGoingProjects {
+    opacity: 0;    
+}
+
+.myOnGoingProjects:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.myOnGoingProjects:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.myOnGoingProjects:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.myOnGoingProjects:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+#btnVoltarAoTopo {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 99;
+    font-size: 16px;
+    border: 1px solid rgba(91, 90, 90, 0.427);
+    outline: none;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 15px;
+    background: none;
+    border-radius: 50%;
+}
+
+#btnVoltarAoTopo:hover {
+    background-color: #00000050; /* Cor de fundo do botão ao passar o mouse */
+}
