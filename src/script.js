@@ -15,6 +15,64 @@ function abrir(link) {
     window.open(link);
 }
 
+function scrollWithOffset(element) {
+    if( navigator.userAgent.match(/Android/i)
+    || navigator.userAgent.match(/webOS/i)
+    || navigator.userAgent.match(/iPhone/i)
+    || navigator.userAgent.match(/iPad/i)
+    || navigator.userAgent.match(/iPod/i)
+    || navigator.userAgent.match(/BlackBerry/i)
+    || navigator.userAgent.match(/Windows Phone/i)
+    ){
+       var headerHeight = 140;
+     }
+    else {
+       var headerHeight = 70;
+     }
+    const elementPosition = element.offsetTop - headerHeight;
+    window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth" // Para animar o scroll
+    });
+}
+
+// Adiciona um event listener para os links de navegação
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('.menu-link');
+    links.forEach(function(link) {
+        link.addEventListener("click", function(event) {
+            event.preventDefault(); // Evita o comportamento padrão do link
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            scrollWithOffset(targetElement);
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('menu');
+    const icons = document.querySelectorAll('.icon');
+
+    menuToggle.addEventListener("click", function(event) {
+        menu.classList.toggle('active'); // Alterna a classe 'active' no menu
+
+        if (menu.classList.contains('active')) {
+            setTimeout(function() {
+                icons.forEach(icon => {
+                    icon.style.opacity = '1'; // Define a opacidade para 1 após um pequeno atraso
+                });
+            }, 50); // Ajuste este valor conforme necessário para atrasar a animação
+        } else {
+            icons.forEach(icon => {
+                icon.style.opacity = '0'; // Se o menu não estiver ativo, oculta os ícones
+            });
+        }
+    });
+});
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     function checkVisibility(entries, observer) {
         entries.forEach(entry => {
@@ -73,6 +131,24 @@ function scrollFunction() {
         document.getElementById("btnVoltarAoTopo").style.display = "none";
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const toggleHeadings = document.querySelectorAll(".toggle-heading");
+  const contents = document.querySelectorAll(".content");
+
+  toggleHeadings.forEach(function(toggleHeading, index) {
+    toggleHeading.addEventListener("click", function() {
+      const content = contents[index];
+      const computedStyle = window.getComputedStyle(content);
+
+      if (computedStyle.getPropertyValue("display") === "none") {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    });
+  });
+});
 
 async function fetchData(ghLogin) {
     let response = await fetch(`https://lengthylyova.pythonanywhere.com/api/gh-contrib-graph/fetch-data/?githubLogin=${ghLogin}`, {method: "GET"});

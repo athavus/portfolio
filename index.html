@@ -30,32 +30,41 @@
                         <a id="title" href="#" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
                             PORTFÓLIO - MIGUEL RYAN
                         </a>
+                        <button class="menu-toggle" id="menuToggle"><img style="margin-left: 5px;" width="50px" src="src/img/dropdown.png"></button>
                         <!--CRIAÇÃO DA LISTA COM OS ÍCONES DO DROPDOWN-->
-                        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                        <!--CADA LI REPRESENTA UM ELEMENTO DA LISTA-->
-                            <!--DIRECIONA PARA A SEÇÃO DE CERTIFICAÇÕES E LICENÇAS-->
-                            <li>
-                                <a href="#secaocontent1" class="nav-link text-white">
-                                    <img class="bi d-block mx-auto mb-1" width="25" height="25" src="src/img/certificacoes.png">
-                                    Certificações
-                                </a>
-                            </li>
-                            <!--DIRECIONA PARA A SEÇÃO DE MEUS PROJETOS CONCLUÍDOS-->
-                            <li>
-                                <a href="#secaocontent2" class="nav-link text-white">
-                                    <img class="bi d-block mx-auto mb-1" width="25" height="25" src="src/img/complete.png">
-                                    Concluídos
-                                </a>
-                            </li>
-
-                            <!--DIRECIONA PARA A SEÇÃO DE MEUS PROJETOS EM ANDAMENTO-->
-                            <li>
-                                <a href="#secaocontent3" class="nav-link text-white">
-                                    <img class="bi d-block mx-auto mb-1" width="25" height="25" src="src/img/progress.png">
-                                    Em Andamento
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="menu" id="menu">
+                          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                            <!--CADA LI REPRESENTA UM ELEMENTO DA LISTA-->
+                                <!--DIRECIONA PARA A SEÇÃO DE CERTIFICAÇÕES E LICENÇAS-->
+                                <li>
+                                    <a href="#secaocontent1" class="menu-link nav-link text-white">
+                                        <img class="bi d-block mx-auto mb-1 icon" width="25" height="25" src="src/img/certificacoes.png">
+                                        Certificações
+                                    </a>
+                                </li>
+                                <!--DIRECIONA PARA A SEÇÃO DE MEUS PROJETOS CONCLUÍDOS-->
+                                <li>
+                                    <a href="#secaocontent2" class="menu-link nav-link text-white">
+                                        <img class="bi d-block mx-auto mb-1 icon" width="25" height="25" src="src/img/complete.png">
+                                        Concluídos
+                                    </a>
+                                </li>
+    
+                                <!--DIRECIONA PARA A SEÇÃO DE MEUS PROJETOS EM ANDAMENTO-->
+                                <li>
+                                    <a href="#secaocontent3" class="menu-link nav-link text-white">
+                                        <img class="bi d-block mx-auto mb-1 icon" width="25" height="25" src="src/img/progress.png">
+                                        Em Andamento
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#secaocontent4" class="menu-link nav-link text-white">
+                                        <img class="bi d-block mx-auto mb-1 icon" width="25" height="25" src="src/img/github.png">
+                                        Github
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,75 +114,78 @@
         <!--INICIO DA SEGUNDA SEÇÃO DO SITE: MINHAS CERTIFICAÇÕES-->
         <section id="secaocontent1">
             <!--TÍTULO DA SEÇÃO-->
-            <div class="container" id="projectComplete">
-                <h2 class="myCertificates">
-                    Minhas Certificações:
+            <div class="container toggle-heading" id="projectComplete">
+                <h2 class="myCertificates" style="transform: translateX(-15px);">
+                  <img width="50px" style="padding: 0; margin: 0; filter: invert(1); transform: translateY(-3px);" src="src/img/dropdown.png"> Minhas Certificações:
                 </h2>
-            </div>
-            <!--CERTIFICADO DE CONCLUSÃO DE CURSO DO IFPB - TÉCNICO INFORMÁTICA-->
-            <div class="container myCertificates" id="certificado">
-                <br>
-                <!--SUBTÍTULO DA SEÇÃO-->
-                <h3 class="myCertificates">
-                    - Curso Técnico em Informática Integrado Ao Ensino Médio.
-                </h3>
-                <br>
-                <!--DESCRIÇÃO DA SEÇÃO-->
-                <p class="myCertificates">
-                    Concluí o curso técnico em informática integrado ao ensino médio no IFPB - Campus Campina Grande, curso este que possuiu 3 anos de duração.
-                </p>
-                <!--LINK PARA EMBARCAR O PDF-->
-                <object class="myCertificates" data="src/documents/certificadoifpbinfo.pdf" type="application/pdf" width="100%" height="300px">
-                    <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
-                    <p class="errorpdf">
-                        Navegador não suporta o pdf embarcado. 
-                    </p>
-                </object>
-                <br><br>
-                <!--LINK PARA BAIXAR O PDF-->
-                <h5>
-                    <i class="myCertificates">
-                        Certificado de Conclusão do Curso Técnico em Informática:
-                    </i>
-                    <br><br>
-                    <a class="download myCertificates" href="src/documents/certificadoifpbinfo.pdf" download="certificado de conclusao de curso tecnico em informatica">
-                        Baixar
-                    </a>
-                </h5>
-            </div>
-            <br><br>
-            <hr width="70%" style="margin: auto;">
 
-            <!--CERTIFICADO DE PARTICIPAÇÃO NA BSIDESJP-->
-            <div class="container myCertificates" id="certificado">
-                <br>
-                <!--SUBTÍTULO DA SEÇÃO-->
-                <h3 class="myCertificates">
-                    - Participação no Evento Security Bsides João Pessoa 2023.
-                </h3>
-                <br>
-                <!--DESCRIÇÃO DA SEÇÃO-->
-                <p class="myCertificates">
-                    Participei no dia 23/09/2023 do evento intitulado Security Bsides João Pessoa 2023, este que possuía carga horária total de 8 horas.    
-                </p>
-                <!--LINK PARA EMBARCAR O PDF-->
-                <object class="myCertificates" data="src/documents/bsidesjp.pdf" type="application/pdf" width="100%" height="300px">
-                    <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
-                    <p class="errorpdf">
-                        Navegador não suporta o pdf embarcado. 
-                    </p>
-                </object>
-                <br><br>
-                <!--LINK PARA BAIXAR O PDF-->
-                <h5>
-                    <i class="myCertificates">
-                        Certificado de Participação na Security Bsides João Pessoa 2023:
-                    </i>
+                <div class="content" id="content">
+                    <br>
+                    <div class="container myCertificates" id="certificado">
+                        <br>
+                        <!--SUBTÍTULO DA SEÇÃO-->
+                        <h3 class="myCertificates">
+                            - Curso Técnico em Informática Integrado Ao Ensino Médio.
+                        </h3>
+                        <br>
+                        <!--DESCRIÇÃO DA SEÇÃO-->
+                        <p class="myCertificates">
+                            Concluí o curso técnico em informática integrado ao ensino médio no IFPB - Campus Campina Grande, curso este que possuiu 3 anos de duração.
+                        </p>
+                        <!--LINK PARA EMBARCAR O PDF-->
+                        <object class="myCertificates" data="src/documents/certificadoifpbinfo.pdf" type="application/pdf" width="100%" height="300px">
+                            <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
+                            <p class="errorpdf">
+                                Navegador não suporta o pdf embarcado. 
+                            </p>
+                        </object>
+                        <br><br>
+                        <!--LINK PARA BAIXAR O PDF-->
+                        <h5>
+                            <i class="myCertificates">
+                                Certificado de Conclusão do Curso Técnico em Informática:
+                            </i>
+                            <br><br>
+                            <a class="download myCertificates" href="src/documents/certificadoifpbinfo.pdf" download="certificado de conclusao de curso tecnico em informatica">
+                                Baixar
+                            </a>
+                        </h5>
+                    </div>
                     <br><br>
-                    <a class="myCertificates download" href="src/documents/bsidesjp.pdf" download="certificado de conclusao de curso tecnico em informatica">
-                        Baixar
-                    </a>
-                </h5>
+                    <hr width="70%" style="margin: auto;">
+        
+                    <!--CERTIFICADO DE PARTICIPAÇÃO NA BSIDESJP-->
+                    <div class="container myCertificates" id="certificado">
+                        <br>
+                        <!--SUBTÍTULO DA SEÇÃO-->
+                        <h3 class="myCertificates">
+                            - Participação no Evento Security Bsides João Pessoa 2023.
+                        </h3>
+                        <br>
+                        <!--DESCRIÇÃO DA SEÇÃO-->
+                        <p class="myCertificates">
+                            Participei no dia 23/09/2023 do evento intitulado Security Bsides João Pessoa 2023, este que possuía carga horária total de 8 horas.    
+                        </p>
+                        <!--LINK PARA EMBARCAR O PDF-->
+                        <object class="myCertificates" data="src/documents/bsidesjp.pdf" type="application/pdf" width="100%" height="300px">
+                            <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
+                            <p class="errorpdf">
+                                Navegador não suporta o pdf embarcado. 
+                            </p>
+                        </object>
+                        <br><br>
+                        <!--LINK PARA BAIXAR O PDF-->
+                        <h5>
+                            <i class="myCertificates">
+                                Certificado de Participação na Security Bsides João Pessoa 2023:
+                            </i>
+                            <br><br>
+                            <a class="myCertificates download" href="src/documents/bsidesjp.pdf" download="certificado de conclusao de curso tecnico em informatica">
+                                Baixar
+                            </a>
+                        </h5>
+                    </div>                
+                </div>
             </div>
         </section>
         <!--FIM DA SEGUNDA SEÇÃO DO SITE-->
@@ -183,31 +195,34 @@
         <!--INICIO DA TERCEIRA SEÇÃO DO SITE: MEUS PROJETOS CONCLUÍDOS-->
         <section id="secaocontent2">
             <!--TÍTULO DA SEÇÃO-->
-            <div class="container" id="projectComplete">
-                <h2 class="myCompletedProjects">
-                    Meus Projetos Concluídos:
+            <div class="container toggle-heading" id="projectComplete">
+                <h2 class="myCompletedProjects" style="transform: translateX(-15px);">
+                  <img width="50px" style="padding: 0; margin: 0; filter: invert(1); transform: translateY(-3px);" src="src/img/dropdown.png"> Meus Projetos Concluídos:
                 </h2>
-            </div>
-            
-            <div class="container" id="certificado">
-                <br>
-                <!--SUBTÍTULO DA SEÇÃO-->
-                <h3 class="myCompletedProjects">
-                    - Site para o Lajedo do Marinho.
-                </h3>
-                <br>
-                <!--DESCRIÇÃO DA SEÇÃO-->
-                <p class="myCompletedProjects">
-                    Este site foi feito com o intuito de potencializar o turismo na região do Lajedo do Marinho, localizado em Boqueirão - PB.    
-                </p>
-                
-                <!--LINKS PARA ABRIR O SITE DITO-->
-                <button target="_blank" onclick="abrir('https://athavus.github.io/lajedodomarinho')" id="acessar" class="download myCompletedProjects">
-                    Acessar
-                </button>
-                <button id="acessarLajedo" class="download myCompletedProjects" target="_blank" href="src/documents/patentelajedo.pdf" download="Certificado de Registro de Programa de Computador">
-                    Patente
-                </button>
+                <div class="content" id="content">
+                  <br>
+
+                    <div class="container" id="certificado">
+                        <br>
+                        <!--SUBTÍTULO DA SEÇÃO-->
+                        <h3 class="myCompletedProjects">
+                            - Site para o Lajedo do Marinho.
+                        </h3>
+                        <br>
+                        <!--DESCRIÇÃO DA SEÇÃO-->
+                        <p class="myCompletedProjects">
+                            Este site foi feito com o intuito de potencializar o turismo na região do Lajedo do Marinho, localizado em Boqueirão - PB.    
+                        </p>
+                        
+                        <!--LINKS PARA ABRIR O SITE DITO-->
+                        <button target="_blank" onclick="abrir('https://athavus.github.io/lajedodomarinho')" id="acessar" class="download myCompletedProjects">
+                            Acessar
+                        </button>
+                        <button id="acessarLajedo" class="download myCompletedProjects" target="_blank" href="src/documents/patentelajedo.pdf" download="Certificado de Registro de Programa de Computador">
+                            Patente
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -218,90 +233,93 @@
         <!--INICIO DA QUARTA SEÇÃO DO SITE: MEUS PROJETOS EM ANDAMENTO-->
         <section id="secaocontent3">
             <!--TÍTULO DA SEÇÃO-->
-            <div class="container" id="projectComplete">
-                <h2 class="myOnGoingProjects">
-                    Meus Projetos Em Andamento:
+            <div class="container toggle-heading" id="projectComplete">
+                <h2 class="myOnGoingProjects" style="transform: translateX(-15px);">
+                  <img width="50px" style="padding: 0; margin: 0; filter: invert(1); transform: translateY(-3px);" src="src/img/dropdown.png"> Meus Projetos Em Andamento:
                 </h2>
-            </div>
-            
-            <div class="container" id="certificado">
-                <br>
-                <!--SUBTÍTULO DA SEÇÃO-->
-                <h3 class="myOnGoingProjects">
-                    - Site para a WebRádio do IFPB Campina Grande.
-                </h3>
-                <br>
-                <!--DESCRIÇÃO DA SEÇÃO-->
-                <p class="myOnGoingProjects">
-                    Este site está sendo produzido com o intuito de armazenar as postagens e transmissões feitas pelo órgão de rádio do Instituto Federal da Paraíba - Campus Campina Grande.
-                </p>
-                
-                <!--LINKS PARA ABRIR O SITE DITO-->
-                <button target="_blank" onclick="abrir('https://github.com/athavus')" id="acessar" class="download myOnGoingProjects">
-                    Acessar
-                </button>
-            </div>
 
-            <div class="container" id="certificado">
-                <br>
-                <!--SUBTÍTULO DA SEÇÃO-->
-                <h3 class="myOnGoingProjects">
-                    - Aplicação Web para o ECIT de Boqueirão.
-                </h3>
-                <br>
-                <!--DESCRIÇÃO DA SEÇÃO-->
-                <p class="myOnGoingProjects">
-                    Este webapp está sendo produzido na intenção de informatizar e automatizar as tarefas dos funcionários e alunos da Escola Cidadã Integral Técnica da cidade de Boqueirão.
-                </p>
-                
-                <!--LINKS PARA ABRIR O SITE DITO-->
-                <button target="_blank" onclick="abrir('https://github.com/athavus')" id="acessar" class="download myOnGoingProjects">
-                    Acessar
-                </button>
-            </div>
+                <div class="content" id="content">
+                  <br>
 
-            <div class="container" id="certificado">
-                <br>
-                <!--SUBTÍTULO DA SEÇÃO-->
-                <h3 class="myOnGoingProjects">
-                    - Empório Sertanejo.
-                </h3>
-                <br>
-                <!--DESCRIÇÃO DA SEÇÃO-->
-                <p class="myOnGoingProjects">
-                    Este site está sendo produzido para a loja Empório Sertanejo com o intuito de divulgar e realizar os serviços eletrônicos que a entidade necessita.
-                </p>
-                
-                <!--LINKS PARA ABRIR O SITE DITO-->
-                <button target="_blank" onclick="abrir('https://ilusinusmate.github.io/emporio_sertanejo')" id="acessar" class="myOnGoingProjects download">
-                    Acessar
-                </button>
-                <button target="_blank" onclick="abrir('https://github.com/ilusinusmate/emporio_sertanejo')" id="acessar" class="myOnGoingProjects download">
-                    Repositório
-                </button>
+                    <div class="container" id="certificado">
+                        <br>
+                        <!--SUBTÍTULO DA SEÇÃO-->
+                        <h3 class="myOnGoingProjects">
+                            - Site para a WebRádio do IFPB Campina Grande.
+                        </h3>
+                        <br>
+                        <!--DESCRIÇÃO DA SEÇÃO-->
+                        <p class="myOnGoingProjects">
+                            Este site está sendo produzido com o intuito de armazenar as postagens e transmissões feitas pelo órgão de rádio do Instituto Federal da Paraíba - Campus Campina Grande.
+                        </p>
+                        
+                        <!--LINKS PARA ABRIR O SITE DITO-->
+                        <button target="_blank" onclick="abrir('https://github.com/athavus')" id="acessar" class="download myOnGoingProjects">
+                            Acessar
+                        </button>
+                    </div>
+        
+                    <div class="container" id="certificado">
+                        <br>
+                        <!--SUBTÍTULO DA SEÇÃO-->
+                        <h3 class="myOnGoingProjects">
+                            - Aplicação Web para o ECIT de Boqueirão.
+                        </h3>
+                        <br>
+                        <!--DESCRIÇÃO DA SEÇÃO-->
+                        <p class="myOnGoingProjects">
+                            Este webapp está sendo produzido na intenção de informatizar e automatizar as tarefas dos funcionários e alunos da Escola Cidadã Integral Técnica da cidade de Boqueirão.
+                        </p>
+                        
+                        <!--LINKS PARA ABRIR O SITE DITO-->
+                        <button target="_blank" onclick="abrir('https://github.com/athavus')" id="acessar" class="download myOnGoingProjects">
+                            Acessar
+                        </button>
+                    </div>
+        
+                    <div class="container" id="certificado">
+                        <br>
+                        <!--SUBTÍTULO DA SEÇÃO-->
+                        <h3 class="myOnGoingProjects">
+                            - Empório Sertanejo.
+                        </h3>
+                        <br>
+                        <!--DESCRIÇÃO DA SEÇÃO-->
+                        <p class="myOnGoingProjects">
+                            Este site está sendo produzido para a loja Empório Sertanejo com o intuito de divulgar e realizar os serviços eletrônicos que a entidade necessita.
+                        </p>
+                        
+                        <!--LINKS PARA ABRIR O SITE DITO-->
+                        <button target="_blank" onclick="abrir('https://ilusinusmate.github.io/emporio_sertanejo')" id="acessar" class="myOnGoingProjects download">
+                            Acessar
+                        </button>
+                        <button target="_blank" onclick="abrir('https://github.com/ilusinusmate/emporio_sertanejo')" id="acessar" class="myOnGoingProjects download">
+                            Repositório
+                        </button>
+                    </div>
+        
+                    <div class="container" id="certificado">
+                        <br>
+                        <!--SUBTÍTULO DA SEÇÃO-->
+                        <h3 class="myOnGoingProjects">
+                            - Ambiente Virtual de Aprendizagem Para a Prefeitura de Sumé
+                        </h3>
+                        <br>
+                        <!--DESCRIÇÃO DA SEÇÃO-->
+                        <p class="myOnGoingProjects">
+                            Este site está sendo produzido para a prefeitura de Sumé com o intuito de armazenar e orientar os materiais dos cursos oferecidos por eles.
+                        </p>
+                        
+                        <!--LINKS PARA ABRIR O SITE DITO-->
+                        <button target="_blank" onclick="abrir('https://athavus.github.io/ava_sume')" id="acessar" class="myOnGoingProjects download">
+                            Acessar
+                        </button>
+                        <button target="_blank" onclick="abrir('https://github.com/athavus/ava_sume')" id="acessar" class="myOnGoingProjects download">
+                            Repositório
+                        </button>
+                    </div>
+                </div>
             </div>
-
-            <div class="container" id="certificado">
-                <br>
-                <!--SUBTÍTULO DA SEÇÃO-->
-                <h3 class="myOnGoingProjects">
-                    - Ambiente Virtual de Aprendizagem Para a Prefeitura de Sumé
-                </h3>
-                <br>
-                <!--DESCRIÇÃO DA SEÇÃO-->
-                <p class="myOnGoingProjects">
-                    Este site está sendo produzido para a prefeitura de Sumé com o intuito de armazenar e orientar os materiais dos cursos oferecidos por eles.
-                </p>
-                
-                <!--LINKS PARA ABRIR O SITE DITO-->
-                <button target="_blank" onclick="abrir('https://athavus.github.io/ava_sume')" id="acessar" class="myOnGoingProjects download">
-                    Acessar
-                </button>
-                <button target="_blank" onclick="abrir('https://github.com/athavus/ava_sume')" id="acessar" class="myOnGoingProjects download">
-                    Repositório
-                </button>
-            </div>
-
         </section>
         <!--FIM DA QUARTA SEÇÃO DO SITE-->
       
@@ -309,14 +327,16 @@
 
         <!--INICIO DA QUINTA SEÇÃO DO SITE-->
         <section id="secaocontent4">
-            <div class="container" id="projectComplete">
-                <h2 class="myCertificates">
-                    Minhas Contribuições no Github:
+            <div class="container toggle-heading" id="projectComplete">
+                <h2 class="myCertificates" style="transform: translateX(-15px);">
+                  <img width="50px" style="padding: 0; margin: 0; filter: invert(1); transform: translateY(-3px);" src="src/img/dropdown.png"> Minhas Contribuições no Github:
                 </h2>
-            </div>
-            <br>
-            <div class="contributions">
-                <div id="gh" data-login="athavus" target="_blank"></div>
+                <div class="content" id="content">
+                  <br>
+                  <div class="contributions">
+                      <div id="gh" data-login="athavus" target="_blank"></div>
+                  </div>
+                </div>
             </div>
         </section>
         <!--FIM DA QUINTA SEÇÃO DO SITE-->
