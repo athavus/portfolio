@@ -367,3 +367,13 @@ header {
 #btnVoltarAoTopo:hover {
     background-color: #00000050; /* Cor de fundo do botão ao passar o mouse */
 }
+
+.ghCalendarHeader span {
+    display: none;
+}
+
+.contributions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
