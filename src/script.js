@@ -27,7 +27,7 @@ function scrollWithOffset(element) {
        var headerHeight = 210;
      }
     else {
-       var headerHeight = 70;
+       var headerHeight = 210;
      }
     const elementPosition = element.offsetTop - headerHeight;
     window.scrollTo({
