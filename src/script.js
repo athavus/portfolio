@@ -135,16 +135,29 @@ function scrollFunction() {
 document.addEventListener("DOMContentLoaded", function() {
   const toggleHeadings = document.querySelectorAll(".toggle-heading");
   const contents = document.querySelectorAll(".content");
+  const dropdownIcons = document.querySelectorAll(".dropdown-icon");
+
 
   toggleHeadings.forEach(function(toggleHeading, index) {
     toggleHeading.addEventListener("click", function() {
       const content = contents[index];
+      const dropdownIcon = dropdownIcons[index];
       const computedStyle = window.getComputedStyle(content);
 
       if (computedStyle.getPropertyValue("display") === "none") {
         content.style.display = "block";
+        dropdownIcon.setAttribute("src", "src/img/updropdown.png")
+        dropdownIcon.style.width = "20px";
+        dropdownIcon.style.transform = "translateX(16px)";
+        dropdownIcon.style.marginRight = "30px";
+
       } else {
         content.style.display = "none";
+        dropdownIcon.setAttribute("src", "src/img/dropdown.png")
+        dropdownIcon.style.width = "50px"
+        dropdownIcon.style.marginRight = "0px"
+        dropdownIcon.style.transform = "translateX(0px)";
+
       }
     });
   });
