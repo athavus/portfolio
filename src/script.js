@@ -24,7 +24,7 @@ function scrollWithOffset(element) {
     || navigator.userAgent.match(/BlackBerry/i)
     || navigator.userAgent.match(/Windows Phone/i)
     ){
-       var headerHeight = 140;
+       var headerHeight = 210;
      }
     else {
        var headerHeight = 70;
