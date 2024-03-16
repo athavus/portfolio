@@ -8,6 +8,8 @@ function socialMedia(name) {
         window.open("https://wa.me/5583988864397")
     } else if (id == 'github') {
         window.open("https://github.com/athavus")
+    } else if (id == 'acessarLajedo') {
+        window.open("src/documents/patentelajedo.pdf")
     }
 }
 
@@ -102,18 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
     myOnGoingProjects.forEach(projects => {
         observer.observe(projects);
     })
-
-    document.getElementById('acessarLajedo').addEventListener('click', function() {
-        var url = './documents/patentelajedo.pdf';
-        var filename = 'Patente - Lajedo do Marinho.pdf';
-        var link = document.createElement('a');
-        link.style.display = 'none';
-        document.body.appendChild(link);
-        link.setAttribute('href', url);
-        link.setAttribute('download', filename);
-        link.click();
-        document.body.removeChild(link);
-    });
 });
 
 function topFunction() {
