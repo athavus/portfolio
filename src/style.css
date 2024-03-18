@@ -1,10 +1,11 @@
 /**ESTILIZAÇÕES GERAIS**/
 hr {
-    color:#abaeb3;
+    color: #abaeb3;
 }
 
 body {
-    padding-top: 100px; /* Altura do cabeçalho */
+    padding-top: 100px;
+    /* Altura do cabeçalho */
 }
 
 @media (max-width: 991px) {
@@ -12,6 +13,7 @@ body {
         padding-top: 15%;
     }
 }
+
 /*FIM DAS ESTILIZAÇÕES GERAIS*/
 
 /*ANIMAÇÕES*/
@@ -19,6 +21,7 @@ body {
     from {
         top: -19%;
     }
+
     to {
         top: 0%;
     }
@@ -26,12 +29,17 @@ body {
 
 @keyframes cascate {
     from {
-        opacity: 0; /* Começa invisível */
-        transform: translateY(-20px); /* Move para cima */
+        opacity: 0;
+        /* Começa invisível */
+        transform: translateY(-20px);
+        /* Move para cima */
     }
+
     to {
-        opacity: 1; /* Torna o elemento visível */
-        transform: translateY(0); /* Volta à posição original */
+        opacity: 1;
+        /* Torna o elemento visível */
+        transform: translateY(0);
+        /* Volta à posição original */
     }
 }
 
@@ -62,7 +70,7 @@ body {
 }
 
 header {
-    position: fixed; 
+    position: fixed;
     top: 0;
     width: 100%;
     animation: slideDown 1.2s ease forwards;
@@ -116,34 +124,40 @@ header * {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        display: none; /* Inicialmente oculto */
+        display: none;
+        /* Inicialmente oculto */
         opacity: 0;
-        transition: opacity 0.5s ease; /* Adicione uma transição suave */
+        transition: opacity 0.5s ease;
+        /* Adicione uma transição suave */
     }
-    
+
     .menu.active {
-        display: flex; /* Mostra o menu quando ativo */
+        display: flex;
+        /* Mostra o menu quando ativo */
         opacity: 1;
     }
-    
+
     .icon {
-        opacity: 0; /* Inicialmente oculto */
-        transition: opacity 0.5s ease; /* Adicione uma transição suave */
+        opacity: 0;
+        /* Inicialmente oculto */
+        transition: opacity 0.5s ease;
+        /* Adicione uma transição suave */
     }
-    
+
     .menu.active .icon {
-        opacity: 1; /* Mostra os ícones quando o menu está ativo */
+        opacity: 1;
+        /* Mostra os ícones quando o menu está ativo */
     }
-    
+
 
     .menu-toggle {
         display: block;
     }
 
-    .menu-toggle.active + .menu {
+    .menu-toggle.active+.menu {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         position: absolute;
         top: 100%;
         left: 0;
@@ -162,9 +176,10 @@ header * {
 
 .nav-link:hover {
     transition: 0.5s;
-    color: #312d2d; 
+    color: #312d2d;
     opacity: 0.3;
 }
+
 /**FIM DA ESTILIZAÇÃO DO HEADER E NAVBAR**/
 
 /**INICIO DA ESTILIZAÇÃO DA PRIMEIRA SEÇÃO DO SITE (TÍTULO)**/
@@ -212,7 +227,7 @@ header * {
 
 #instagram:hover {
     transition: 0.5s;
-    background-color: #f0007462; 
+    background-color: #f0007462;
     opacity: 0.7;
 }
 
@@ -222,7 +237,7 @@ header * {
 
 #linkedin:hover {
     transition: 0.5s;
-    background-color: #0d68c262; 
+    background-color: #0d68c262;
     opacity: 0.7;
 }
 
@@ -232,7 +247,7 @@ header * {
 
 #whatsapp:hover {
     transition: 0.5s;
-    background-color: #25d36662; 
+    background-color: #25d36662;
     opacity: 0.7;
 }
 
@@ -242,7 +257,7 @@ header * {
 
 #github:hover {
     transition: 0.5s;
-    background-color: #24292d88; 
+    background-color: #24292d88;
     opacity: 0.7;
 }
 
@@ -251,11 +266,11 @@ header * {
     border-bottom: 1px solid #ccc;
     padding: 10px;
 }
-  
+
 .toggle-heading h2 {
     margin: 0;
 }
-  
+
 .content {
     display: none;
 }
@@ -291,7 +306,7 @@ header * {
     border: 1px solid black;
     border-radius: 7%;
     padding: 12px;
-    text-decoration: none; 
+    text-decoration: none;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -299,13 +314,14 @@ header * {
 .download:hover {
     color: black;
     transition: 0.5s;
-    background-color: white; 
+    background-color: white;
     opacity: 0.7;
 }
 
 .errorpdf {
-    color:#eb4b3f;
+    color: #eb4b3f;
 }
+
 /**FIM DA ESTILIZAÇÃO DA SEGUNDA SEÇÃO**/
 
 /**INICIO DA ESTILIZAÇÃO DA TERCEIRA SEÇÃO**/
@@ -365,6 +381,7 @@ header * {
 .sec1:nth-child(9) {
     animation-delay: 1s;
 }
+
 .sec1:nth-child(10) {
     animation-delay: 1s;
 }
@@ -439,7 +456,7 @@ header * {
 }
 
 .myOnGoingProjects {
-    opacity: 0;    
+    opacity: 0;
 }
 
 .myOnGoingProjects:nth-child(1) {
@@ -459,7 +476,8 @@ header * {
 }
 
 #btnVoltarAoTopo {
-    display: none; /* Inicialmente oculto */
+    display: none;
+    /* Inicialmente oculto */
     position: fixed;
     bottom: 25px;
     right: 25px;
@@ -467,7 +485,8 @@ header * {
     font-size: 16px;
     border: 1px solid rgba(91, 90, 90, 0.427);
     outline: none;
-    background-color: #007bff; /* Cor de fundo do botão */
+    background-color: #007bff;
+    /* Cor de fundo do botão */
     color: black;
     cursor: pointer;
     transition: 0.5s;
@@ -477,7 +496,8 @@ header * {
 }
 
 #btnVoltarAoTopo:hover {
-    background-color: #00000050; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #00000050;
+    /* Cor de fundo do botão ao passar o mouse */
 }
 
 .ghCalendarHeader span {
@@ -510,7 +530,7 @@ header * {
     --gh-text-default-color: #e6edf3;
     --gh-text-inactive-color: #848D97;
     --gh-link-hover-color: #2f81f7;
-    --gh-font-default-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    --gh-font-default-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 /* Main block */
@@ -519,10 +539,12 @@ header * {
     width: fit-content;
     font-family: var(--gh-font-default-family);
 }
+
 #gh a {
     text-decoration: none;
     color: var(--gh-text-inactive-color)
 }
+
 #gh a:hover {
     color: var(--gh-link-hover-color);
 }
@@ -531,11 +553,13 @@ header * {
 .ghCalendarTable {
     color: var(--gh-text-default-color);
     border-spacing: 3px;
-    border-collapse: separate;  
+    border-collapse: separate;
 }
+
 .ghCalendarTable tr {
     height: 10px;
 }
+
 .ghCalendarTable td {
     text-align: left;
     box-sizing: border-box;
@@ -550,23 +574,29 @@ header * {
     outline: 1px solid var(--gh-cell-outline-color);
     outline-offset: -2px;
 }
+
 .ghCalendarDayCell[data-level="NONE"] {
     background-color: var(--gh-cell-level0-color);
     border: none;
     outline: none;
 }
+
 .ghCalendarDayCell[data-level="FIRST_QUARTILE"] {
     background-color: var(--gh-cell-level1-color);
 }
+
 .ghCalendarDayCell[data-level="SECOND_QUARTILE"] {
     background-color: var(--gh-cell-level2-color);
 }
+
 .ghCalendarDayCell[data-level="THIRD_QUARTILE"] {
     background-color: var(--gh-cell-level3-color);
 }
+
 .ghCalendarDayCell[data-level="FOURTH_QUARTILE"] {
     background-color: var(--gh-cell-level4-color);
 }
+
 .ghCalendarDayCell span {
     visibility: hidden;
     position: absolute;
@@ -580,6 +610,7 @@ header * {
     border-radius: 6px;
     font-family: var(--gh-font-default-family);
 }
+
 .ghCalendarDayCell span::after {
     content: "";
     position: absolute;
@@ -589,9 +620,11 @@ header * {
     border-style: solid;
     border-color: var(--gh-cell-info-bg-color) transparent transparent transparent;
 }
+
 .ghCalendarDayCell:hover span {
     visibility: visible;
 }
+
 .ghCalendarLabel {
     font-size: 12px;
     position: absolute;
@@ -610,6 +643,7 @@ header * {
     border-top-right-radius: 6px;
     border: var(--gh-border-card-width, 1px) solid var(--gh-border-card-color);
 }
+
 .ghCalendarCanvas {
     display: flex !important;
     flex-direction: column;
@@ -625,14 +659,17 @@ header * {
     margin-bottom: var(--gh-base-size-4);
     height: 20px;
 }
+
 .ghCalendarHeader span {
     float: left;
 }
+
 .ghCalendarHeader div {
     display: flex;
     flex-direction: row;
     float: right;
 }
+
 .ghCalendarHeader div img {
     width: 20px;
     height: 20px;
@@ -649,19 +686,23 @@ header * {
     font-family: var(--gh-font-default-family);
     color: var(--gh-text-inactive-color);
 }
+
 .ghCalendarCardFooterLink {
     display: block;
     float: left;
 }
+
 .ghCalendarCardFooterColors {
     display: flex;
     flex-direction: row;
     float: right;
     align-items: center;
 }
+
 .ghCalendarCardFooterColors * {
     margin-right: var(--gh-base-size-4);
 }
+
 .ghCalendarCardFooterColors div {
     width: 10px;
     height: 10px;
