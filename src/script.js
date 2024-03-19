@@ -58,17 +58,17 @@ document.addEventListener("DOMContentLoaded", () => {
 	const icons = document.querySelectorAll(".icon");
 
 	menuToggle.addEventListener("click", (event) => {
-		menu.classList.toggle("active"); // Alterna a classe 'active' no menu
+		menu.classList.toggle("active");
 
 		if (menu.classList.contains("active")) {
 			setTimeout(() => {
                 for (const icon of icons) {
-					icon.style.opacity = "1"; // Define a opacidade para 1 após um pequeno atraso
+					icon.style.opacity = "1";
                 }
-			}, 50); // Ajuste este valor conforme necessário para atrasar a animação
+			}, 50);
 		} else {
             for (const icon of icons) {
-				icon.style.opacity = "0"; // Se o menu não estiver ativo, oculta os ícones
+				icon.style.opacity = "0"; 
             }
 		}
 	});
