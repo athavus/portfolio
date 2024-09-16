@@ -275,6 +275,15 @@ header * {
     display: none;
 }
 
+.github-athavus {
+    margin-top: 1%;
+    margin-left: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /**FIM DA ESTILIZAÇÃO DA PRIMEIRA SEÇÃO DO SITE**/
 
 .section {
@@ -507,8 +516,10 @@ header * {
 .contributions {
     display: flex;
     align-items: center;
+    border-radius: 18px;
     justify-content: center;
 }
+
 
 :root {
     --gh-bg-color: #0d1117;
