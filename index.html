@@ -1,796 +1,592 @@
 <!doctype html>
 <html lang="pt-br">
-    <head>
-        <!--DEFINIÇÃO DE CHARSET E ESCALA-->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!--DEFINIÇÃO DO TÍTULO-->
-        <title>Portfólio - Miguel Ryan</title>
-        <!--DEFINIÇÃO DE FONTES USADAS NA CONSTRUÇÃO DO WEBSITE-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <!--SOURCE CODE PRO-->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap"
-            rel="stylesheet"
-        />
-        <!--DOSIS-->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"
-            rel="stylesheet"
-        />
-        <!--IMPORTAÇÃO DO BOOTSTRAP-->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous"
-        />
-        <!--IMPORTAÇÃO DO ARQUIVO DE CSS-->
-        <link rel="stylesheet" href="src/style.css" />
 
-        <!--IMPORTAÇÃO DO ARQUIVO DE JAVASCRIPT-->
-    </head>
+<head>
+    <!--DEFINIÇÃO DE CHARSET E ESCALA-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--DEFINIÇÃO DO TÍTULO-->
+    <title>Portfólio - Miguel Ryan</title>
+    <!--DEFINIÇÃO DE FONTES USADAS NA CONSTRUÇÃO DO WEBSITE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--SOURCE CODE PRO-->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap"
+        rel="stylesheet" />
+    <!--DOSIS-->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet" />
+    <!--IMPORTAÇÃO DO BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!--IMPORTAÇÃO DO ARQUIVO DE CSS-->
+    <link rel="stylesheet" href="src/style.css" />
 
-    <body>
-        <!--CRIAÇÃO DA SEÇÃO DO HEADER-->
-        <header>
-            <div class="px-3 py-2 text-white">
-                <div class="container">
-                    <div
-                        class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-                    >
-                        <!--TÍTULO-->
-                        <a
-                            id="title"
-                            href="#"
-                            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
-                        >
-                            PORTFÓLIO - MIGUEL RYAN
-                        </a>
-                        <button class="menu-toggle" id="menuToggle">
-                            <img
-                                style="margin-left: 5px"
-                                width="50px"
-                                src="src/img/dropdown.png"
-                            />
-                        </button>
-                        <!--CRIAÇÃO DA LISTA COM OS ÍCONES DO DROPDOWN-->
-                        <div class="menu" id="menu">
-                            <ul
-                                class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
-                            >
-                                <!--CADA LI REPRESENTA UM ELEMENTO DA LISTA-->
-                                <!--DIRECIONA PARA A SEÇÃO DE CERTIFICAÇÕES E LICENÇAS-->
-                                <li>
-                                    <a
-                                        href="#secaocontent1"
-                                        class="menu-link nav-link text-white"
-                                    >
-                                        <img
-                                            class="bi d-block mx-auto mb-1 icon"
-                                            width="25"
-                                            height="25"
-                                            src="src/img/certificacoes.png"
-                                        />
-                                        Certificações
-                                    </a>
-                                </li>
-                                <!--DIRECIONA PARA A SEÇÃO DE MEUS PROJETOS CONCLUÍDOS-->
-                                <li>
-                                    <a
-                                        href="#secaocontent2"
-                                        class="menu-link nav-link text-white"
-                                    >
-                                        <img
-                                            class="bi d-block mx-auto mb-1 icon"
-                                            width="25"
-                                            height="25"
-                                            src="src/img/complete.png"
-                                        />
-                                        Concluídos
-                                    </a>
-                                </li>
+    <!--IMPORTAÇÃO DO ARQUIVO DE JAVASCRIPT-->
+</head>
 
-                                <!--DIRECIONA PARA A SEÇÃO DE MEUS PROJETOS EM ANDAMENTO-->
-                                <li>
-                                    <a
-                                        href="#secaocontent3"
-                                        class="menu-link nav-link text-white"
-                                    >
-                                        <img
-                                            class="bi d-block mx-auto mb-1 icon"
-                                            width="25"
-                                            height="25"
-                                            src="src/img/progress.png"
-                                        />
-                                        Em Andamento
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#secaocontent4"
-                                        class="menu-link nav-link text-white"
-                                    >
-                                        <img
-                                            class="bi d-block mx-auto mb-1 icon"
-                                            width="25"
-                                            height="25"
-                                            src="src/img/github.png"
-                                        />
-                                        Github
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+<body>
+    <!--CRIAÇÃO DA SEÇÃO DO HEADER-->
+    <header>
+        <div class="px-3 py-2 text-white">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <!--TÍTULO-->
+                    <a id="title" href="#"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                        PORTFÓLIO - MIGUEL RYAN
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <img style="margin-left: 5px" width="50px" src="src/img/dropdown.png" />
+                    </button>
+                    <!--CRIAÇÃO DA LISTA COM OS ÍCONES DO DROPDOWN-->
+                    <div class="menu" id="menu">
+                        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                            <!--CADA LI REPRESENTA UM ELEMENTO DA LISTA-->
+                            <!--DIRECIONA PARA A SEÇÃO DE CERTIFICAÇÕES E LICENÇAS-->
+                            <li>
+                                <a href="#secaocontent1" class="menu-link nav-link text-white">
+                                    <img class="bi d-block mx-auto mb-1 icon" width="25" height="25"
+                                        src="src/img/certificacoes.png" />
+                                    Certificações
+                                </a>
+                            </li>
+                            <!--DIRECIONA PARA A SEÇÃO DE MEUS PROJETOS CONCLUÍDOS-->
+                            <li>
+                                <a href="#secaocontent2" class="menu-link nav-link text-white">
+                                    <img class="bi d-block mx-auto mb-1 icon" width="25" height="25"
+                                        src="src/img/complete.png" />
+                                    Concluídos
+                                </a>
+                            </li>
+
+                            <!--DIRECIONA PARA A SEÇÃO DE MEUS PROJETOS EM ANDAMENTO-->
+                            <li>
+                                <a href="#secaocontent3" class="menu-link nav-link text-white">
+                                    <img class="bi d-block mx-auto mb-1 icon" width="25" height="25"
+                                        src="src/img/progress.png" />
+                                    Em Andamento
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#secaocontent4" class="menu-link nav-link text-white">
+                                    <img class="bi d-block mx-auto mb-1 icon" width="25" height="25"
+                                        src="src/img/github.png" />
+                                    Github
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </header>
-        <!--FIM DA SEÇÃO DO HEADER-->
+        </div>
+    </header>
+    <!--FIM DA SEÇÃO DO HEADER-->
 
-        <br />
+    <br />
 
-        <!--CRIAÇÃO DA PRIMEIRA SEÇÃO DO SITE: APRESENTAÇÃO-->
-        <section id="secao1">
-            <div class="wrapper">
-                <!--PRIMEIRA COLUNA: MINHA FOTO-->
-                <div class="coluna sec1">
-                    <img id="eu" src="src/img/eu.jpeg" alt="" />
+    <!--CRIAÇÃO DA PRIMEIRA SEÇÃO DO SITE: APRESENTAÇÃO-->
+    <section id="secao1">
+        <div class="wrapper">
+            <!--PRIMEIRA COLUNA: MINHA FOTO-->
+            <div class="coluna sec1">
+                <img id="eu" src="src/img/eu.jpeg" alt="" />
+            </div>
+            <!--SEGUNDA COLUNA: TÍTULO, SUBTÍTULO E REDES SOCIAIS-->
+            <div id="devweb" class="align-self-start mt-4 coluna">
+                <h1 id="devfrontend" class="sec1">
+                    Desenvolvedor Web Front-End
+                </h1>
+                <hr />
+                <br />
+                <h4 class="sec1">Miguel Ryan Dantas de Freitas</h4>
+                <h4 class="sec1">
+                    Cursando Engenharia de Computação: IFPB - Campina Grande
+                </h4>
+                <br />
+                <h4 class="sec1">
+                    <strong>Currículo Lattes:</strong>
+                    http://lattes.cnpq.br/0968900052378926
+                </h4>
+                <p id="telephone" class="sec1">
+                    <img width="45px" src="src/img/phone.png" alt="phone" />
+                    +55 (83)988864397
+                </p>
+                <br />
+                <!--ÍCONES DAS REDES SOCIAIS LINKADAS-->
+                <button onclick="socialMedia('instagram')" class="icon sec1" id="instagram" href="">
+                    <img width="40" height="40" src="src/img/instagram.png" alt="" />
+                </button>
+                <button onclick="socialMedia('linkedin')" class="icon sec1" id="linkedin" href="">
+                    <img width="40" height="40" src="src/img/linkedin.png" alt="" />
+                </button>
+                <button onclick="socialMedia('whatsapp')" class="icon sec1" id="whatsapp" href="">
+                    <img width="40" height="40" src="src/img/whatsapp.png" alt="" />
+                </button>
+                <button onclick="socialMedia('github')" class="icon sec1" id="github" href="">
+                    <img width="40" height="40" src="src/img/github.png" alt="" />
+                </button>
+            </div>
+            <div class="github-athavus">
+                <div class="contributions">
+                    <div id="gh" data-login="athavus" target="_blank"></div>
                 </div>
-                <!--SEGUNDA COLUNA: TÍTULO, SUBTÍTULO E REDES SOCIAIS-->
-                <div id="devweb" class="align-self-start mt-4 coluna">
-                    <h1 id="devfrontend" class="sec1">
-                        Desenvolvedor Web Front-End
-                    </h1>
-                    <hr />
+            </div>
+        </div>
+    </section>
+    <!--FIM DA PRIMEIRA SEÇÃO DO SITE-->
+
+    <hr class="section" />
+
+    <!--INICIO DA SEGUNDA SEÇÃO DO SITE: MINHAS CERTIFICAÇÕES-->
+    <section id="secaocontent1">
+        <!--TÍTULO DA SEÇÃO-->
+        <div class="container toggle-heading" id="projectComplete">
+            <h2 class="myCertificates" style="transform: translateX(-15px)">
+                <img class="dropdown-icon" width="50px" style="
+                            padding: 0;
+                            margin: 0;
+                            filter: invert(1);
+                            transform: translateY(-3px);
+                        " src="src/img/dropdown.png" />
+                Minhas Certificações:
+            </h2>
+
+            <div class="content" id="content">
+                <br />
+                <div class="container myCertificates" id="certificado">
                     <br />
-                    <h4 class="sec1">Miguel Ryan Dantas de Freitas</h4>
-                    <h4 class="sec1">
-                        Cursando Engenharia de Computação: IFPB - Campina Grande
-                    </h4>
+                    <!--SUBTÍTULO DA SEÇÃO-->
+                    <h3 class="myCertificates">
+                        - Curso Técnico em Informática Integrado Ao Ensino
+                        Médio.
+                    </h3>
                     <br />
-                    <h4 class="sec1">
-                        <strong>Currículo Lattes:</strong>
-                        http://lattes.cnpq.br/0968900052378926
-                    </h4>
-                    <p id="telephone" class="sec1">
-                        <img width="45px" src="src/img/phone.png" alt="phone" />
-                        +55 (83)988864397
+                    <!--DESCRIÇÃO DA SEÇÃO-->
+                    <p class="myCertificates">
+                        Concluí o curso técnico em informática integrado ao
+                        ensino médio no IFPB - Campus Campina Grande, curso
+                        este que possuiu 3 anos de duração.
                     </p>
-                    <br />
-                    <!--ÍCONES DAS REDES SOCIAIS LINKADAS-->
-                    <button
-                        onclick="socialMedia('instagram')"
-                        class="icon sec1"
-                        id="instagram"
-                        href=""
-                    >
-                        <img
-                            width="40"
-                            height="40"
-                            src="src/img/instagram.png"
-                            alt=""
-                        />
-                    </button>
-                    <button
-                        onclick="socialMedia('linkedin')"
-                        class="icon sec1"
-                        id="linkedin"
-                        href=""
-                    >
-                        <img
-                            width="40"
-                            height="40"
-                            src="src/img/linkedin.png"
-                            alt=""
-                        />
-                    </button>
-                    <button
-                        onclick="socialMedia('whatsapp')"
-                        class="icon sec1"
-                        id="whatsapp"
-                        href=""
-                    >
-                        <img
-                            width="40"
-                            height="40"
-                            src="src/img/whatsapp.png"
-                            alt=""
-                        />
-                    </button>
-                    <button
-                        onclick="socialMedia('github')"
-                        class="icon sec1"
-                        id="github"
-                        href=""
-                    >
-                        <img
-                            width="40"
-                            height="40"
-                            src="src/img/github.png"
-                            alt=""
-                        />
-                    </button>
+                    <!--LINK PARA EMBARCAR O PDF-->
+                    <object class="myCertificates" data="src/documents/certificadoifpbinfo.pdf" type="application/pdf"
+                        width="100%" height="300px">
+                        <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
+                        <p class="errorpdf">
+                            Navegador não suporta o pdf embarcado.
+                        </p>
+                    </object>
+                    <br /><br />
+                    <!--LINK PARA BAIXAR O PDF-->
+                    <h5>
+                        <i class="myCertificates">
+                            Certificado de Conclusão do Curso Técnico em
+                            Informática:
+                        </i>
+                        <br /><br />
+                        <a class="download myCertificates" href="src/documents/certificadoifpbinfo.pdf"
+                            download="certificado de conclusao de curso tecnico em informatica">
+                            Baixar
+                        </a>
+                    </h5>
                 </div>
-                <div class="github-athavus">
-                    <div class="contributions">
-                        <div id="gh" data-login="athavus" target="_blank"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--FIM DA PRIMEIRA SEÇÃO DO SITE-->
+                <br /><br />
+                <hr width="70%" style="margin: auto" />
 
-        <hr class="section" />
-
-        <!--INICIO DA SEGUNDA SEÇÃO DO SITE: MINHAS CERTIFICAÇÕES-->
-        <section id="secaocontent1">
-            <!--TÍTULO DA SEÇÃO-->
-            <div class="container toggle-heading" id="projectComplete">
-                <h2 class="myCertificates" style="transform: translateX(-15px)">
-                    <img
-                        class="dropdown-icon"
-                        width="50px"
-                        style="
-                            padding: 0;
-                            margin: 0;
-                            filter: invert(1);
-                            transform: translateY(-3px);
-                        "
-                        src="src/img/dropdown.png"
-                    />
-                    Minhas Certificações:
-                </h2>
-
-                <div class="content" id="content">
+                <!--CERTIFICADO DE PARTICIPAÇÃO NA BSIDESJP-->
+                <div class="container myCertificates" id="certificado">
                     <br />
-                    <div class="container myCertificates" id="certificado">
-                        <br />
-                        <!--SUBTÍTULO DA SEÇÃO-->
-                        <h3 class="myCertificates">
-                            - Curso Técnico em Informática Integrado Ao Ensino
-                            Médio.
-                        </h3>
-                        <br />
-                        <!--DESCRIÇÃO DA SEÇÃO-->
-                        <p class="myCertificates">
-                            Concluí o curso técnico em informática integrado ao
-                            ensino médio no IFPB - Campus Campina Grande, curso
-                            este que possuiu 3 anos de duração.
+                    <!--SUBTÍTULO DA SEÇÃO-->
+                    <h3 class="myCertificates">
+                        - Participação no Evento Security Bsides João Pessoa
+                        2023.
+                    </h3>
+                    <br />
+                    <!--DESCRIÇÃO DA SEÇÃO-->
+                    <p class="myCertificates">
+                        Participei no dia 23/09/2023 do evento intitulado
+                        Security Bsides João Pessoa 2023, este que possuía
+                        carga horária total de 8 horas.
+                    </p>
+                    <!--LINK PARA EMBARCAR O PDF-->
+                    <object class="myCertificates" data="src/documents/bsidesjp2023.pdf" type="application/pdf"
+                        width="100%" height="300px">
+                        <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
+                        <p class="errorpdf">
+                            Navegador não suporta o pdf embarcado.
                         </p>
-                        <!--LINK PARA EMBARCAR O PDF-->
-                        <object
-                            class="myCertificates"
-                            data="src/documents/certificadoifpbinfo.pdf"
-                            type="application/pdf"
-                            width="100%"
-                            height="300px"
-                        >
-                            <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
-                            <p class="errorpdf">
-                                Navegador não suporta o pdf embarcado.
-                            </p>
-                        </object>
-                        <br /><br />
-                        <!--LINK PARA BAIXAR O PDF-->
-                        <h5>
-                            <i class="myCertificates">
-                                Certificado de Conclusão do Curso Técnico em
-                                Informática:
-                            </i>
-                            <br /><br />
-                            <a
-                                class="download myCertificates"
-                                href="src/documents/certificadoifpbinfo.pdf"
-                                download="certificado de conclusao de curso tecnico em informatica"
-                            >
-                                Baixar
-                            </a>
-                        </h5>
-                    </div>
+                    </object>
                     <br /><br />
-                    <hr width="70%" style="margin: auto" />
+                    <!--LINK PARA BAIXAR O PDF-->
+                    <h5>
+                        <i class="myCertificates">
+                            Certificado de Participação na Security Bsides
+                            João Pessoa 2023:
+                        </i>
+                        <br /><br />
+                        <a class="myCertificates download" href="src/documents/bsidesjp2023.pdf" download="bsides 2023">
+                            Baixar
+                        </a>
+                    </h5>
+                </div>
+                <br /><br />
+                <hr width="70%" style="margin: auto" />
 
-                    <!--CERTIFICADO DE PARTICIPAÇÃO NA BSIDESJP-->
-                    <div class="container myCertificates" id="certificado">
-                        <br />
-                        <!--SUBTÍTULO DA SEÇÃO-->
-                        <h3 class="myCertificates">
-                            - Participação no Evento Security Bsides João Pessoa
-                            2023.
-                        </h3>
-                        <br />
-                        <!--DESCRIÇÃO DA SEÇÃO-->
-                        <p class="myCertificates">
-                            Participei no dia 23/09/2023 do evento intitulado
-                            Security Bsides João Pessoa 2023, este que possuía
-                            carga horária total de 8 horas.
+                <!--CERTIFICADO DE PARTICIPAÇÃO NA BSIDESJP-->
+                <div class="container myCertificates" id="certificado">
+                    <br />
+                    <!--SUBTÍTULO DA SEÇÃO-->
+                    <h3 class="myCertificates">
+                        - Participação no Evento Security Bsides João Pessoa
+                        2024.
+                    </h3>
+                    <br />
+                    <!--DESCRIÇÃO DA SEÇÃO-->
+                    <p class="myCertificates">
+                        Participei no dia 14/09/2024 do evento intitulado
+                        Security Bsides João Pessoa 2023, este que possuía
+                        carga horária total de 8 horas.
+                    </p>
+                    <!--LINK PARA EMBARCAR O PDF-->
+                    <object class="myCertificates" data="src/documents/bsidesjp2024.pdf" type="application/pdf"
+                        width="100%" height="300px">
+                        <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
+                        <p class="errorpdf">
+                            Navegador não suporta o pdf embarcado.
                         </p>
-                        <!--LINK PARA EMBARCAR O PDF-->
-                        <object
-                            class="myCertificates"
-                            data="src/documents/bsidesjp2023.pdf"
-                            type="application/pdf"
-                            width="100%"
-                            height="300px"
-                        >
-                            <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
-                            <p class="errorpdf">
-                                Navegador não suporta o pdf embarcado.
-                            </p>
-                        </object>
-                        <br /><br />
-                        <!--LINK PARA BAIXAR O PDF-->
-                        <h5>
-                            <i class="myCertificates">
-                                Certificado de Participação na Security Bsides
-                                João Pessoa 2023:
-                            </i>
-                            <br /><br />
-                            <a
-                                class="myCertificates download"
-                                href="src/documents/bsidesjp2023.pdf"
-                                download="bsides 2023"
-                            >
-                                Baixar
-                            </a>
-                        </h5>
-                    </div>
+                    </object>
                     <br /><br />
-                    <hr width="70%" style="margin: auto" />
+                    <!--LINK PARA BAIXAR O PDF-->
+                    <h5>
+                        <i class="myCertificates">
+                            Certificado de Participação na Security Bsides
+                            João Pessoa 2024:
+                        </i>
+                        <br /><br />
+                        <a class="myCertificates download" href="src/documents/bsidesjp2024.pdf"
+                            download="bsidesjp2024">
+                            Baixar
+                        </a>
+                    </h5>
+                </div>
 
-                    <!--CERTIFICADO DE PARTICIPAÇÃO NA BSIDESJP-->
-                    <div class="container myCertificates" id="certificado">
-                        <br />
-                        <!--SUBTÍTULO DA SEÇÃO-->
-                        <h3 class="myCertificates">
-                            - Participação no Evento Security Bsides João Pessoa
-                            2024.
-                        </h3>
-                        <br />
-                        <!--DESCRIÇÃO DA SEÇÃO-->
-                        <p class="myCertificates">
-                            Participei no dia 14/09/2024 do evento intitulado
-                            Security Bsides João Pessoa 2023, este que possuía
-                            carga horária total de 8 horas.
+                <br /><br />
+                <hr width="70%" style="margin: auto" />
+                <div class="container myCertificates" id="certificado">
+                    <br />
+                    <!--SUBTÍTULO DA SEÇÃO-->
+                    <h3 class="myCertificates">
+                        - Certificado de Fundamentos das Plataformas de
+                        Sensoriamento Inteligente para Indústria
+                    </h3>
+                    <br />
+                    <!--DESCRIÇÃO DA SEÇÃO-->
+                    <p class="myCertificates">
+                        Concluí o curso Fundamentos das Plataformas de
+                        Sensoriamento Inteligente para Indústria ofertado
+                        pelo Centro de competência Virtus CC.
+                    </p>
+                    <!--LINK PARA EMBARCAR O PDF-->
+                    <object class="myCertificates" data="src/documents/fpsii.pdf" type="application/pdf" width="100%"
+                        height="300px">
+                        <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
+                        <p class="errorpdf">
+                            Navegador não suporta o pdf embarcado.
                         </p>
-                        <!--LINK PARA EMBARCAR O PDF-->
-                        <object
-                            class="myCertificates"
-                            data="src/documents/bsidesjp2024.pdf"
-                            type="application/pdf"
-                            width="100%"
-                            height="300px"
-                        >
-                            <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
-                            <p class="errorpdf">
-                                Navegador não suporta o pdf embarcado.
-                            </p>
-                        </object>
-                        <br /><br />
-                        <!--LINK PARA BAIXAR O PDF-->
-                        <h5>
-                            <i class="myCertificates">
-                                Certificado de Participação na Security Bsides
-                                João Pessoa 2024:
-                            </i>
-                            <br /><br />
-                            <a
-                                class="myCertificates download"
-                                href="src/documents/bsidesjp2024.pdf"
-                                download="bsidesjp2024"
-                            >
-                                Baixar
-                            </a>
-                        </h5>
-                    </div>
-
+                    </object>
                     <br /><br />
-                    <hr width="70%" style="margin: auto" />
-                    <div class="container myCertificates" id="certificado">
-                        <br />
-                        <!--SUBTÍTULO DA SEÇÃO-->
-                        <h3 class="myCertificates">
-                            - Certificado de Fundamentos das Plataformas de
+                    <!--LINK PARA BAIXAR O PDF-->
+                    <h5>
+                        <i class="myCertificates">
+                            Certificado de Fundamentos das Plataformas de
                             Sensoriamento Inteligente para Indústria
-                        </h3>
-                        <br />
-                        <!--DESCRIÇÃO DA SEÇÃO-->
-                        <p class="myCertificates">
-                            Concluí o curso Fundamentos das Plataformas de
-                            Sensoriamento Inteligente para Indústria ofertado
-                            pelo Centro de competência Virtus CC.
-                        </p>
-                        <!--LINK PARA EMBARCAR O PDF-->
-                        <object
-                            class="myCertificates"
-                            data="src/documents/fpsii.pdf"
-                            type="application/pdf"
-                            width="100%"
-                            height="300px"
-                        >
-                            <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
-                            <p class="errorpdf">
-                                Navegador não suporta o pdf embarcado.
-                            </p>
-                        </object>
+                        </i>
                         <br /><br />
-                        <!--LINK PARA BAIXAR O PDF-->
-                        <h5>
-                            <i class="myCertificates">
-                                Certificado de Fundamentos das Plataformas de
-                                Sensoriamento Inteligente para Indústria
-                            </i>
-                            <br /><br />
-                            <a
-                                class="download myCertificates"
-                                href="src/documents/fpsii.pdf"
-                                download="certificado de conclusao de curso tecnico em informatica"
-                            >
-                                Baixar
-                            </a>
-                        </h5>
-                    </div>
+                        <a class="download myCertificates" href="src/documents/fpsii.pdf"
+                            download="certificado de conclusao de curso tecnico em informatica">
+                            Baixar
+                        </a>
+                    </h5>
+                </div>
+                <br /><br />
+                <hr width="70%" style="margin: auto" />
+                <div class="container myCertificates" id="certificado">
+                    <br />
+                    <!--SUBTÍTULO DA SEÇÃO-->
+                    <h3 class="myCertificates">
+                        - Certificado de Participação no o Bootcamp dentro
+                        do contexto do projeto Conect.AI - 2024
+                    </h3>
+                    <br />
+                    <!--DESCRIÇÃO DA SEÇÃO-->
+                    <p class="myCertificates">
+                        Participei do Bootcamp do Virtus CC em parceria com
+                        o Sebrae para desenvolvimento de soluções para
+                        tecnológicas da nova geração.
+                    </p>
+                    <!--LINK PARA EMBARCAR O PDF-->
+                    <object class="myCertificates" data="src/documents/bootcamp sebrae.pdf" type="application/pdf"
+                        width="100%" height="300px">
+                        <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
+                        <p class="errorpdf">
+                            Navegador não suporta o pdf embarcado.
+                        </p>
+                    </object>
                     <br /><br />
-                    <hr width="70%" style="margin: auto" />
-                    <div class="container myCertificates" id="certificado">
-                        <br />
-                        <!--SUBTÍTULO DA SEÇÃO-->
-                        <h3 class="myCertificates">
-                            - Certificado de Participação no o Bootcamp dentro
+                    <!--LINK PARA BAIXAR O PDF-->
+                    <h5>
+                        <i class="myCertificates">
+                            Certificado de Participação no o Bootcamp dentro
                             do contexto do projeto Conect.AI - 2024
-                        </h3>
-                        <br />
-                        <!--DESCRIÇÃO DA SEÇÃO-->
-                        <p class="myCertificates">
-                            Participei do Bootcamp do Virtus CC em parceria com
-                            o Sebrae para desenvolvimento de soluções para
-                            tecnológicas da nova geração.
-                        </p>
-                        <!--LINK PARA EMBARCAR O PDF-->
-                        <object
-                            class="myCertificates"
-                            data="src/documents/bootcamp sebrae.pdf"
-                            type="application/pdf"
-                            width="100%"
-                            height="300px"
-                        >
-                            <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
-                            <p class="errorpdf">
-                                Navegador não suporta o pdf embarcado.
-                            </p>
-                        </object>
+                        </i>
                         <br /><br />
-                        <!--LINK PARA BAIXAR O PDF-->
-                        <h5>
-                            <i class="myCertificates">
-                                Certificado de Participação no o Bootcamp dentro
-                                do contexto do projeto Conect.AI - 2024
-                            </i>
-                            <br /><br />
-                            <a
-                                class="download myCertificates"
-                                href="src/documents/bootcamp sebrae.pdf"
-                                download="certificado de conclusao de curso tecnico em informatica"
-                            >
-                                Baixar
-                            </a>
-                        </h5>
-                    </div><br /><br />
-                    <hr width="70%" style="margin: auto" />
+                        <a class="download myCertificates" href="src/documents/bootcamp sebrae.pdf"
+                            download="certificado de conclusao de curso tecnico em informatica">
+                            Baixar
+                        </a>
+                    </h5>
+                </div><br /><br />
+                <hr width="70%" style="margin: auto" />
 
-                    <!--CERTIFICADO DA CAPACITAÇÃO EM EDADH DO VIRTUS CC-->
-                    <div class="container myCertificates" id="certificado">
-                        <br />
-                        <!--SUBTÍTULO DA SEÇÃO-->
-                        <h3 class="myCertificates">
-                            -  Capacitação Estruturas de Dados e Algoritmos para o Desenvolvimento de Hardware.
-                        </h3>
-                        <br />
-                        <!--DESCRIÇÃO DA SEÇÃO-->
-                        <p class="myCertificates">
-                            Conclui no dia 15/11/2023 o Curso de Capacitação em Estruturas de Dados e Algoritmos para o
-                            Desenvolvimento do Hardware dentro do contexto do projeto Cap.ON - 2024 promovido pelo VIRTUS - CC.
+                <!--CERTIFICADO DA CAPACITAÇÃO EM EDADH DO VIRTUS CC-->
+                <div class="container myCertificates" id="certificado">
+                    <br />
+                    <!--SUBTÍTULO DA SEÇÃO-->
+                    <h3 class="myCertificates">
+                        - Capacitação Estruturas de Dados e Algoritmos para o Desenvolvimento de Hardware.
+                    </h3>
+                    <br />
+                    <!--DESCRIÇÃO DA SEÇÃO-->
+                    <p class="myCertificates">
+                        Conclui no dia 15/11/2023 o Curso de Capacitação em Estruturas de Dados e Algoritmos para o
+                        Desenvolvimento do Hardware dentro do contexto do projeto Cap.ON - 2024 promovido pelo VIRTUS -
+                        CC.
+                    </p>
+                    <!--LINK PARA EMBARCAR O PDF-->
+                    <object class="myCertificates" data="src/documents/edadh-virtus.pdf" type="application/pdf"
+                        width="100%" height="300px">
+                        <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
+                        <p class="errorpdf">
+                            Navegador não suporta o pdf embarcado.
                         </p>
-                        <!--LINK PARA EMBARCAR O PDF-->
-                        <object
-                            class="myCertificates"
-                            data="src/documents/edadh-virtus.pdf"
-                            type="application/pdf"
-                            width="100%"
-                            height="300px"
-                        >
-                            <!--MENSAGEM DE ERRO PARA CASO O PDF NÃO CONSIGA SER EMBARCADO-->
-                            <p class="errorpdf">
-                                Navegador não suporta o pdf embarcado.
-                            </p>
-                        </object>
+                    </object>
+                    <br /><br />
+                    <!--LINK PARA BAIXAR O PDF-->
+                    <h5>
+                        <i class="myCertificates">
+                            Certificado de Capacitação em Estruturas de Dados e Algoritmos para o Desenvolvimento de
+                            Hardware
+                            dentro do contexto do projeto Cap.ON - 2024:
+                        </i>
                         <br /><br />
-                        <!--LINK PARA BAIXAR O PDF-->
-                        <h5>
-                            <i class="myCertificates">
-                                Certificado de Capacitação em Estruturas de Dados e Algoritmos para o Desenvolvimento de Hardware
-                                dentro do contexto do projeto Cap.ON - 2024:
-                            </i>
-                            <br /><br />
-                            <a
-                                class="myCertificates download"
-                                href="src/documents/edadh-virtus.pdf"
-                                download="bsides 2023"
-                            >
-                                Baixar
-                            </a>
-                        </h5>
-                    </div>
+                        <a class="myCertificates download" href="src/documents/edadh-virtus.pdf" download="bsides 2023">
+                            Baixar
+                        </a>
+                    </h5>
                 </div>
             </div>
-        </section>
-        <!--FIM DA SEGUNDA SEÇÃO DO SITE-->
+        </div>
+    </section>
+    <!--FIM DA SEGUNDA SEÇÃO DO SITE-->
 
-        <hr class="section" />
+    <hr class="section" />
 
-        <!--INICIO DA TERCEIRA SEÇÃO DO SITE: MEUS PROJETOS CONCLUÍDOS-->
-        <section id="secaocontent2">
-            <!--TÍTULO DA SEÇÃO-->
-            <div class="container toggle-heading" id="projectComplete">
-                <h2
-                    class="myCompletedProjects"
-                    style="transform: translateX(-15px)"
-                >
-                    <img
-                        class="dropdown-icon"
-                        width="50px"
-                        style="
+    <!--INICIO DA TERCEIRA SEÇÃO DO SITE: MEUS PROJETOS CONCLUÍDOS-->
+    <section id="secaocontent2">
+        <!--TÍTULO DA SEÇÃO-->
+        <div class="container toggle-heading" id="projectComplete">
+            <h2 class="myCompletedProjects" style="transform: translateX(-15px)">
+                <img class="dropdown-icon" width="50px" style="
                             padding: 0;
                             margin: 0;
                             filter: invert(1);
                             transform: translateY(-3px);
-                        "
-                        src="src/img/dropdown.png"
-                    />
-                    Meus Projetos Concluídos:
-                </h2>
-                <div class="content" id="content">
-                    <br />
+                        " src="src/img/dropdown.png" />
+                Meus Projetos Concluídos:
+            </h2>
+            <div class="content" id="content">
+                <br />
 
-                    <div class="container" id="certificado">
-                        <br /><br />
-                        <!--SUBTÍTULO DA SEÇÃO-->
-                        <h3 class="myCompletedProjects">
-                            - Site para o Lajedo do Marinho.
-                        </h3>
-                        <br />
-                        <div>
-                            <iframe
-                                src="https://athavus.github.io/lajedodomarinho"
-                                width="100%"
-                                height="500"
-                                frameborder="0"
-                            ></iframe>
-                        </div>
-                        <br />
+                <div class="container" id="certificado">
+                    <br /><br />
+                    <!--SUBTÍTULO DA SEÇÃO-->
+                    <h3 class="myCompletedProjects">
+                        - Bibliotecas para a placa BitDogLab Raspberry Pi Pico W (Buzzer, Microfone e Matriz de Leds
+                        RGB) <img src="src/img/virtus-full-logo.png" width="250" alt="">
+                    </h3>
+                    <br />
+                    <div>
+                        <!--DESCRIÇÃO DA SEÇÃO-->
+                        <h4 class="refTitle1 myCompletedProjects">MATRIZ DE LEDS RGB:</h4>
+                        <p class="myCompletedProjects">
+                            Esta biblioteca foi desenvolvida para a plataforma BitdogLab que utiliza a Raspberry Pi Pico
+                            W (RP2040). Ela permite controlar uma matriz de LEDs RGB e exibir mensagens rolando, além de
+                            ter um modo demo.
+                        </p>
+
+                        <!--LINKS PARA ABRIR O SITE DITO-->
+                        <button target="_blank" onclick="abrir('https://github.com/athavus/bitdoglab-mledsrgb-lib')"
+                            id="acessar" class="download myCompletedProjects">
+                            Acessar Repositório
+                        </button>
+                    </div>
+                    <br />
+                    <div>
+                        <!--DESCRIÇÃO DA SEÇÃO-->
+                        <h4 class="refTitle1 myCompletedProjects">BUZZER:</h4>
+                        <p class="myCompletedProjects">
+                            Este repositório contém uma biblioteca para o uso do buzzer na raspberry pi pico w da plataforma bitdoglab com algumas demos que se concentram na geração de sinais Morse e análise de ruído colorido. 
+                        </p>
+
+                        <!--LINKS PARA ABRIR O SITE DITO-->
+                        <button target="_blank" onclick="abrir('https://github.com/athavus/bitdoglab-buzzer-lib')"
+                            id="acessar" class="download myCompletedProjects">
+                            Acessar Repositório
+                        </button>
+                    </div>
+                    <br />
+                    <div>
+                        <!--DESCRIÇÃO DA SEÇÃO-->
+                        <h4 class="refTitle1 myCompletedProjects">MICROFONE:</h4>
+                        <p class="myCompletedProjects">
+                            Esta biblioteca foi desenvolvida para a plataforma BitdogLab que utiliza a Raspberry Pi Pico W (RP2040). Ela permite a captura de áudio via microfone.
+                        </p>
+
+                        <!--LINKS PARA ABRIR O SITE DITO-->
+                        <button target="_blank" onclick="abrir('https://github.com/athavus/bitdoglab-mic-lib')"
+                            id="acessar" class="download myCompletedProjects">
+                            Acessar Repositório
+                        </button>
+                    </div>
+                </div>
+                <br />
+                <div class="container" id="certificado">
+                    <br /><br />
+                    <!--SUBTÍTULO DA SEÇÃO-->
+                    <h3 class="myCompletedProjects">
+                        - Monitor de áudio e ruído na BitDogLab Raspberry Pi Pico W <img src="src/img/virtus-full-logo.png" width="250" alt="">
+                    </h3>
+                    <br />
+                    <div>
                         <!--DESCRIÇÃO DA SEÇÃO-->
                         <p class="myCompletedProjects">
-                            Este site foi feito com o intuito de potencializar o
-                            turismo na região do Lajedo do Marinho, localizado
-                            em Boqueirão - PB.
+                            Monitor de áudio e ruído do microfone da Bitdoglab Raspberry Pi Pico W (RP2040). Entrega final para a capacitação em sistemas embarcados do Virtus CC antes do módulo de RTOS.
                         </p>
 
                         <!--LINKS PARA ABRIR O SITE DITO-->
-                        <button
-                            target="_blank"
-                            onclick="abrir('https://athavus.github.io/lajedodomarinho')"
-                            id="acessar"
-                            class="download myCompletedProjects"
-                        >
-                            Acessar
+                        <button target="_blank" onclick="abrir('https://github.com/athavus/mic-monitor')"
+                            id="acessar" class="download myCompletedProjects">
+                            Acessar Repositório
                         </button>
-                        <button
-                            id="acessarLajedo"
-                            target="__blank"
-                            onclick="socialMedia('acessarLajedo')"
-                            class="download myCompletedProjects"
-                            download="Certificado de Registro de Programa de Computador"
-                        >
-                            Patente
+                    </div>
+                </div>
+                <br />
+                <div class="container" id="certificado">
+                    <br /><br />
+                    <!--SUBTÍTULO DA SEÇÃO-->
+                    <h3 class="myCompletedProjects">
+                        - Monitor de áudio e ruído na BitDogLab Raspberry Pi Pico W <img src="src/img/virtus-full-logo.png" width="250" alt="">
+                    </h3>
+                    <br />
+                    <div>
+                        <!--DESCRIÇÃO DA SEÇÃO-->
+                        <p class="myCompletedProjects">
+                            Analisador de Espectro de Áudio em tempo real do microfone da plataforma BitDogLab Raspberry Pi Pico W. O dispositivo captura sinais de áudio, aplica técnicas de processamento digital de sinais e visualiza o espectro de frequência na faixa de voz humana. Feito junto de Jezrael Pereira na capacitação em sistemas embarcados pelo Virtus CC.
+                        </p>
+
+                        <!--LINKS PARA ABRIR O SITE DITO-->
+                        <button target="_blank" onclick="abrir('https://github.com/athavus/mic-spectral')"
+                            id="acessar" class="download myCompletedProjects">
+                            Acessar Repositório
+                        </button>
+                    </div>
+                </div>
+                <br />
+                <div class="container" id="certificado">
+                    <br /><br />
+                    <!--SUBTÍTULO DA SEÇÃO-->
+                    <h3 class="myCompletedProjects">
+                        - Empório Sertanejo
+                    </h3>
+                    <br />
+                    <div>
+                        <!--DESCRIÇÃO DA SEÇÃO-->
+                        <p class="myCompletedProjects">
+                            Este site foi produzido para a loja Empório
+                        Sertanejo com o intuito de divulgar e realizar os
+                        serviços eletrônicos que a entidade necessita.
+                        </p>
+
+                        <!--LINKS PARA ABRIR O SITE DITO-->
+                        <button target="_blank" onclick="abrir('https://emporiosertanejo.com.br')"
+                            id="acessar" class="download myCompletedProjects">
+                            Acessar
                         </button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--FIM DA TERCEIRA SEÇÃO DO SITE-->
+    <!--FIM DA TERCEIRA SEÇÃO DO SITE-->
 
-        <hr class="section" />
+    <hr class="section" />
 
-        <!--INICIO DA QUARTA SEÇÃO DO SITE: MEUS PROJETOS EM ANDAMENTO-->
-        <section id="secaocontent3">
-            <!--TÍTULO DA SEÇÃO-->
-            <div class="container toggle-heading" id="projectComplete">
-                <h2
-                    class="myOnGoingProjects"
-                    style="transform: translateX(-15px)"
-                >
-                    <img
-                        class="dropdown-icon"
-                        width="50px"
-                        style="
+    <!--INICIO DA QUARTA SEÇÃO DO SITE: MEUS PROJETOS EM ANDAMENTO-->
+    <section id="secaocontent3">
+        <!--TÍTULO DA SEÇÃO-->
+        <div class="container toggle-heading" id="projectComplete">
+            <h2 class="myOnGoingProjects" style="transform: translateX(-15px)">
+                <img class="dropdown-icon" width="50px" style="
                             padding: 0;
                             margin: 0;
                             filter: invert(1);
                             transform: translateY(-3px);
-                        "
-                        src="src/img/dropdown.png"
-                    />
-                    Meus Projetos Em Andamento:
-                </h2>
+                        " src="src/img/dropdown.png" />
+                Meus Projetos Em Andamento:
+            </h2>
 
-                <div class="content" id="content">
+            <div class="content" id="content">
+                <br />
+
+                <div class="container" id="certificado">
                     <br />
+                    <!--SUBTÍTULO DA SEÇÃO-->
+                    <h3 class="myOnGoingProjects">
+                        - Site para a WebRádio do IFPB Campina Grande.
+                    </h3>
+                    <br />
+                    <!--DESCRIÇÃO DA SEÇÃO-->
+                    <p class="myOnGoingProjects">
+                        Este site está sendo produzido com o intuito de
+                        armazenar as postagens e transmissões feitas pelo
+                        órgão de rádio do Instituto Federal da Paraíba -
+                        Campus Campina Grande.
+                    </p>
 
-                    <div class="container" id="certificado">
-                        <br />
-                        <!--SUBTÍTULO DA SEÇÃO-->
-                        <h3 class="myOnGoingProjects">
-                            - Site para a WebRádio do IFPB Campina Grande.
-                        </h3>
-                        <br />
-                        <!--DESCRIÇÃO DA SEÇÃO-->
-                        <p class="myOnGoingProjects">
-                            Este site está sendo produzido com o intuito de
-                            armazenar as postagens e transmissões feitas pelo
-                            órgão de rádio do Instituto Federal da Paraíba -
-                            Campus Campina Grande.
-                        </p>
-
-                        <!--LINKS PARA ABRIR O SITE DITO-->
-                        <button
-                            target="_blank"
-                            onclick="abrir('https://github.com/athavus')"
-                            id="acessar"
-                            class="download myOnGoingProjects"
-                        >
-                            Acessar
-                        </button>
-                    </div>
-                    <hr class="section" />
-
-                    <div class="container" id="certificado">
-                        <br />
-                        <!--SUBTÍTULO DA SEÇÃO-->
-                        <h3 class="myOnGoingProjects">
-                            - Aplicação Web para o ECIT de Boqueirão.
-                        </h3>
-                        <br />
-                        <!--DESCRIÇÃO DA SEÇÃO-->
-                        <p class="myOnGoingProjects">
-                            Este webapp está sendo produzido na intenção de
-                            informatizar e automatizar as tarefas dos
-                            funcionários e alunos da Escola Cidadã Integral
-                            Técnica da cidade de Boqueirão.
-                        </p>
-
-                        <!--LINKS PARA ABRIR O SITE DITO-->
-                        <button
-                            target="_blank"
-                            onclick="abrir('https://github.com/athavus')"
-                            id="acessar"
-                            class="download myOnGoingProjects"
-                        >
-                            Acessar
-                        </button>
-                    </div>
-                    <hr class="section" />
-
-                    <div class="container" id="certificado">
-                        <br />
-
-                        <!--SUBTÍTULO DA SEÇÃO-->
-                        <h3 class="myOnGoingProjects">- Empório Sertanejo.</h3>
-                        <br />
-                        <div>
-                            <iframe
-                                src="https://ilusinusmate.github.io/emporio_sertanejo"
-                                width="100%"
-                                height="500"
-                                frameborder="0"
-                            ></iframe>
-                        </div>
-                        <br />
-                        <!--DESCRIÇÃO DA SEÇÃO-->
-                        <p class="myOnGoingProjects">
-                            Este site está sendo produzido para a loja Empório
-                            Sertanejo com o intuito de divulgar e realizar os
-                            serviços eletrônicos que a entidade necessita.
-                        </p>
-
-                        <!--LINKS PARA ABRIR O SITE DITO-->
-                        <button
-                            target="_blank"
-                            onclick="abrir('https://ilusinusmate.github.io/emporio_sertanejo')"
-                            id="acessar"
-                            class="myOnGoingProjects download"
-                        >
-                            Acessar
-                        </button>
-                        <button
-                            target="_blank"
-                            onclick="abrir('https://github.com/ilusinusmate/emporio_sertanejo')"
-                            id="acessar"
-                            class="myOnGoingProjects download"
-                        >
-                            Repositório
-                        </button>
-                    </div>
-
-                    <hr class="section" />
-
-                    <div class="container" id="certificado">
-                        <br />
-
-                        <!--SUBTÍTULO DA SEÇÃO-->
-                        <h3 class="myOnGoingProjects">
-                            - Ambiente Virtual de Aprendizagem Para a Prefeitura
-                            de Sumé
-                        </h3>
-                        <br />
-                        <div>
-                            <iframe
-                                src="https://athavus.github.io/ava_sume"
-                                width="100%"
-                                height="500"
-                                frameborder="0"
-                            ></iframe>
-                        </div>
-                        <br />
-                        <!--DESCRIÇÃO DA SEÇÃO-->
-                        <p class="myOnGoingProjects">
-                            Este site está sendo produzido para a prefeitura de
-                            Sumé com o intuito de armazenar e orientar os
-                            materiais dos cursos oferecidos por eles.
-                        </p>
-
-                        <!--LINKS PARA ABRIR O SITE DITO-->
-                        <button
-                            target="_blank"
-                            onclick="abrir('https://athavus.github.io/ava_sume')"
-                            id="acessar"
-                            class="myOnGoingProjects download"
-                        >
-                            Acessar
-                        </button>
-                        <button
-                            target="_blank"
-                            onclick="abrir('https://github.com/athavus/ava_sume')"
-                            id="acessar"
-                            class="myOnGoingProjects download"
-                        >
-                            Repositório
-                        </button>
-                    </div>
+                    <!--LINKS PARA ABRIR O SITE DITO-->
+                    <button target="_blank" onclick="abrir('https://github.com/athavus')" id="acessar"
+                        class="download myOnGoingProjects">
+                        Acessar
+                    </button>
                 </div>
+                <hr class="section" />
             </div>
-        </section>
-        <!--FIM DA QUARTA SEÇÃO DO SITE-->
+        </div>
+    </section>
+    <!--FIM DA QUARTA SEÇÃO DO SITE-->
 
-        <hr class="section" />
+    <hr class="section" />
 
-        <button
-            onclick="topFunction()"
-            id="btnVoltarAoTopo"
-            title="Voltar ao Topo"
-        >
-            <img width="30px" src="src/img/arrowup.png" alt="seta para cima" />
-        </button>
+    <button onclick="topFunction()" id="btnVoltarAoTopo" title="Voltar ao Topo">
+        <img width="30px" src="src/img/arrowup.png" alt="seta para cima" />
+    </button>
 
-        <!--SCRIPTS-->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"
-        ></script>
-        <script src="src/script.js"></script>
-        <br /><br /><br /><br />
-    </body>
+    <!--SCRIPTS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="src/script.js"></script>
+    <br /><br /><br /><br />
+</body>
+
 </html>

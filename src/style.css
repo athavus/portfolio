@@ -436,32 +436,36 @@ header * {
     animation-delay: 0.8s;
 }
 
+.refTitle1 {
+    font-weight: 600;
+}
+
 .myCompletedProjects {
     opacity: 0;
 }
 
 .myCompletedProjects:nth-child(1) {
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
 }
 
 .myCompletedProjects:nth-child(2) {
-    animation-delay: 0.4s;
+    animation-delay: 0.2s;
 }
 
 .myCompletedProjects:nth-child(3) {
-    animation-delay: 0.6s;
+    animation-delay: 0.3s;
 }
 
 .myCompletedProjects:nth-child(4) {
-    animation-delay: 0.8s;
+    animation-delay: 0.4s;
 }
 
 .myCompletedProjects:nth-child(5) {
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 .myCompletedProjects:nth-child(6) {
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 .myOnGoingProjects {

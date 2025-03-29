@@ -3,7 +3,7 @@ function socialMedia(name) {
 	if (id === "instagram") {
 		window.open("https://www.instagram.com/1mrzin/");
 	} else if (id === "linkedin") {
-		window.open("https://www.linkedin.com/in/miguel-ryan-freitas-914504245/");
+		window.open("https://www.linkedin.com/in/miguel-ryan-freitas");
 	} else if (id === "whatsapp") {
 		window.open("https://wa.me/5583988864397");
 	} else if (id === "github") {
