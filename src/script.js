@@ -1,6 +1,11 @@
 function socialMedia(name) {
 	const id = name;
-	
+	gtag('event', 'social_click', {
+		'social_platform': 'instagram',
+		'event_category': 'Social Media',
+		'event_label': 'Instagram Profile'
+	});
+
 	// Rastreamento específico para cada rede social
 	if (id === "instagram") {
 			gtag('event', 'social_click_instagram', {
