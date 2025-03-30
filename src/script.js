@@ -1,5 +1,3 @@
-const trackingAnalyticsId = "G-YFF05MJ3F1"
-
 function socialMedia(name) {
 	const id = name;
 	
