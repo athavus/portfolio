@@ -1,19 +1,55 @@
+const trackingAnalyticsId = "G-YFF05MJ3F1"
+
 function socialMedia(name) {
 	const id = name;
+	
+	// Rastreamento específico para cada rede social
 	if (id === "instagram") {
-		window.open("https://www.instagram.com/1mrzin/");
+			gtag('event', 'social_click', {
+					'social_platform': 'instagram',
+					'event_category': 'Social Media',
+					'event_label': 'Instagram Profile'
+			});
+			window.open("https://www.instagram.com/1mrzin/");
 	} else if (id === "linkedin") {
-		window.open("https://www.linkedin.com/in/miguel-ryan-freitas");
+			gtag('event', 'social_click', {
+					'social_platform': 'linkedin',
+					'event_category': 'Social Media',
+					'event_label': 'LinkedIn Profile'
+			});
+			window.open("https://www.linkedin.com/in/miguel-ryan-freitas");
 	} else if (id === "whatsapp") {
-		window.open("https://wa.me/5583988864397");
+			gtag('event', 'social_click', {
+					'social_platform': 'whatsapp',
+					'event_category': 'Social Media',
+					'event_label': 'WhatsApp Contact'
+			});
+			window.open("https://wa.me/5583988864397");
 	} else if (id === "github") {
-		window.open("https://github.com/athavus");
+			gtag('event', 'social_click', {
+					'social_platform': 'github',
+					'event_category': 'Social Media',
+					'event_label': 'GitHub Profile'
+			});
+			window.open("https://github.com/athavus");
 	} else if (id === "acessarLajedo") {
-		window.open("src/documents/patentelajedo.pdf");
+			gtag('event', 'document_access', {
+					'document_type': 'pdf',
+					'event_category': 'Document',
+					'event_label': 'Patente Lajedo'
+			});
+			window.open("src/documents/patentelajedo.pdf");
 	}
 }
 
 function abrir(link) {
+	// Rastreamento do evento de clique para o Google Analytics
+	gtag('event', 'link_click', {
+			'link_url': link,
+			'event_category': 'External Link',
+			'event_label': link
+	});
+	
 	window.open(link);
 }
 
@@ -42,14 +78,22 @@ function scrollWithOffset(element) {
 document.addEventListener("DOMContentLoaded", () => {
 	const links = document.querySelectorAll(".menu-link");
 
-    for (const link of links) {
-        link.addEventListener("click", function (event) {
-			event.preventDefault(); // Evita o comportamento padrão do link
-			const targetId = this.getAttribute("href").substring(1);
-			const targetElement = document.getElementById(targetId);
-			scrollWithOffset(targetElement);
-		});
-    }
+	for (const link of links) {
+			link.addEventListener("click", function (event) {
+					event.preventDefault(); // Evita o comportamento padrão do link
+					const targetId = this.getAttribute("href").substring(1);
+					const targetElement = document.getElementById(targetId);
+					
+					// Rastreamento do evento de clique para o Google Analytics
+					gtag('event', 'navigation_click', {
+							'section': targetId,
+							'event_category': 'Navigation',
+							'event_label': targetId
+					});
+					
+					scrollWithOffset(targetElement);
+			});
+	}
 });
 
 document.addEventListener("DOMContentLoaded", () => {
