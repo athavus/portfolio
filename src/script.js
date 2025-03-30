@@ -3,28 +3,28 @@ function socialMedia(name) {
 	
 	// Rastreamento específico para cada rede social
 	if (id === "instagram") {
-			gtag('event', 'social_click', {
+			gtag('event', 'social_click_instagram', {
 					'social_platform': 'instagram',
 					'event_category': 'Social Media',
 					'event_label': 'Instagram Profile'
 			});
 			window.open("https://www.instagram.com/1mrzin/");
 	} else if (id === "linkedin") {
-			gtag('event', 'social_click', {
+			gtag('event', 'social_click_linkedin', {
 					'social_platform': 'linkedin',
 					'event_category': 'Social Media',
 					'event_label': 'LinkedIn Profile'
 			});
 			window.open("https://www.linkedin.com/in/miguel-ryan-freitas");
 	} else if (id === "whatsapp") {
-			gtag('event', 'social_click', {
+			gtag('event', 'social_click_whatsapp', {
 					'social_platform': 'whatsapp',
 					'event_category': 'Social Media',
 					'event_label': 'WhatsApp Contact'
 			});
 			window.open("https://wa.me/5583988864397");
 	} else if (id === "github") {
-			gtag('event', 'social_click', {
+			gtag('event', 'social_click_github', {
 					'social_platform': 'github',
 					'event_category': 'Social Media',
 					'event_label': 'GitHub Profile'
